@@ -161,7 +161,9 @@ export default function Index() {
                 </div>
             </div>
            <div className={style.contactPageWrapper}>
-            
+                <h1>Want to work together?</h1>
+                <p>Contact me !</p>
+                <p className={style.email}>email@example.com</p>
            </div>
 
             <Footer />
