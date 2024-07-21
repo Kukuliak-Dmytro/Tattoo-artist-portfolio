@@ -1,0 +1,167 @@
+.heading {
+    font-weight: 500;
+}
+
+.paragraph {
+    border-top: 3px solid white;
+    padding: 15px;
+}
+
+.aboutPageWrapper {
+    height: 1080px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    font-size: 1.75rem;
+    padding: 48px 12px;
+    justify-content: center;
+
+}
+
+.aboutImg img {
+    max-width: 500px;
+    margin-left: 100px;
+    border: 3px outset white;
+}
+
+.aboutDesc h1 {
+    font-weight: 500;
+    padding: 0px 25px 25px 25px;
+
+}
+
+.aboutDesc p {
+    padding: 25px;
+}
+
+.btn {
+    margin: 25px;
+    background-color: black;
+    border: 3px outset white;
+    color: white;
+    padding: 10px 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 400;
+
+    &:hover {
+        background-color: rgb(59, 59, 59);
+
+    }
+}
+
+/* The next part is for the carousel */
+.sliderWrapper {
+    height: 720px;
+    background-color: #dddddd;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 60px 0px;
+}
+
+.imagesContainer {
+    height: 100%;
+    display: inline-block;
+    /* animation: slide 25s infinite linear ;  */
+}
+
+.slideAnimation {
+    animation: slide 25s infinite linear;
+}
+
+
+.imagesContainer .imgWrapper {
+    height: 100%;
+    display: inline-block;
+    position: relative;
+      margin: 10px;
+
+}
+
+.imgWrapper .innerWrapper {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.867);
+    transition: 0.5s;
+
+
+}
+
+.imgWrapper .overlayText {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    z-index: 1;
+    
+    text-align: center;
+
+}
+.imgWrapper .overlayText .headInnerText{
+    padding-bottom: 70%;
+    font-size: 1.5rem;
+}
+
+.imagesContainer .imgWrapper img {
+    height: inherit;
+    transition: 0.5s;
+    z-index: 2;
+    position: absolute;
+
+}
+.imagesContainer .innerWrapper, .imagesContainer .imgWrapper img{
+    transition-delay: 0.15s ;
+
+}
+
+.imagesContainer img:hover {
+    transform: translateY(-1rem);
+    opacity: 0.3;
+
+}
+
+
+.imagesContainer img:hover+ .innerWrapper {
+    transform: translateY(-1rem);
+
+    
+}
+
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* The next part is the chunk that leads to the contact page */
+.contactPageWrapper {
+    height: 720px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    position: relative;
+}
+
+.email {
+    transition: 0.3s linear;
+    position: absolute;
+    bottom: 20%;
+}
+
+.email:hover {
+    color: azure;
+    font-size: larger;
+
+}
