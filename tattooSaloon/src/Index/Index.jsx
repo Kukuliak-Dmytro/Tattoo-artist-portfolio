@@ -160,7 +160,9 @@ export default function Index() {
                     </Link>
                 </div>
             </div>
-           
+           <div className={style.contactPageWrapper}>
+            
+           </div>
 
             <Footer />
         </>
