@@ -1,3 +1,4 @@
+import Card from './Card';
 import { useEffect, useRef, useState } from "react";
 import { Link } from 'react-router-dom';
 import Container from "../Container/Container";
@@ -46,124 +47,94 @@ export default function Index() {
             </div>
             <div className={styles.sliderWrapper}>
                 <div className={styles.imagesContainer} id="imagesContainer">
-                    <Link to='/'>
-                        <div className={styles.imgWrapper}>
-                            <img ref={el => imageRefs.current[0] = el} src="src/assets/1.jpg" alt="" />
-                            <div className={styles.innerWrapper} style={{ width: imageWidths[0] }}>
-                                <div className={styles.overlayText}>
-                                    <div className={styles.headInnerText}><h1>Header text</h1></div>
-                                    <div className={styles.LernMoreInnerText}><p>Learn more about this...</p></div>
-                                </div>
-                            </div>
-                        </div>
-                    </Link>
-                    <Link>
-                        <div className={styles.imgWrapper}>
-                            <img ref={el => imageRefs.current[1] = el} src="src/assets/17.jpg" alt="" />
-                            <div className={styles.innerWrapper} style={{ width: imageWidths[1] }}>
-                                <div className={styles.overlayText}>
-                                    <div className={styles.headInnerText}><h1>Some Header</h1></div>
-                                    <div className={styles.LernMoreInnerText}><p>Learn more about this...</p></div>
-                                </div>
-                            </div>
-                        </div>
-                    </Link>
-                    <Link>
-                        <div className={styles.imgWrapper}>
-                            <img ref={el => imageRefs.current[2] = el} src="src/assets/3.jpg" alt="" />
-                            <div className={styles.innerWrapper} style={{ width: imageWidths[2] }}>
-                                <div className={styles.overlayText}>
-                                    <div className={styles.headInnerText}><h1>Some Header</h1></div>
-                                    <div className={styles.LernMoreInnerText}><p>Learn more about this...</p></div>
-                                </div>
-                            </div>
-                        </div>
-                    </Link>
-                    <Link>
-                        <div className={styles.imgWrapper}>
-                            <img ref={el => imageRefs.current[3] = el} src="src/assets/20.jpg" alt="" />
-                            <div className={styles.innerWrapper} style={{ width: imageWidths[3] }}>
-                                <div className={styles.overlayText}>
-                                    <div className={styles.headInnerText}><h1>Some Header</h1></div>
-                                    <div className={styles.LernMoreInnerText}><p>Learn more about this...</p></div>
-                                </div>
-                            </div>
-                        </div>
-                    </Link>
-                    <Link>
-                        <div className={styles.imgWrapper}>
-                            <img ref={el => imageRefs.current[4] = el} src="src/assets/5.jpg" alt="" />
-                            <div className={styles.innerWrapper} style={{ width: imageWidths[4] }}>
-                                <div className={styles.overlayText}>
-                                    <div className={styles.headInnerText}><h1>Some Header</h1></div>
-                                    <div className={styles.LernMoreInnerText}><p>Learn more about this...</p></div>
-                                </div>
-                            </div>
-                        </div>
-                    </Link>
+                         <Card                           
+                            ref={el => imageRefs.current[0] = el}
+                            imageSrc="src/assets/1.jpg"
+                            imageWidth={imageWidths[0]}
+                            overlayHeader="Some header"
+                            overlayText="Learn more..."
+                            linkTo="/about"
+                        />
+                     <Card                           
+                            ref={el => imageRefs.current[1] = el}
+                            imageSrc="src/assets/17.jpg"
+                            imageWidth={imageWidths[1]}
+                            overlayHeader="Some header"
+                            overlayText="Learn more..."
+                            linkTo="/about"
+                        />
+                     <Card                           
+                            ref={el => imageRefs.current[2] = el}
+                            imageSrc="src/assets/3.jpg"
+                            imageWidth={imageWidths[2]}
+                            overlayHeader="Some header"
+                            overlayText="Learn more..."
+                            linkTo="/about"
+                        />
+                    <Card                           
+                            ref={el => imageRefs.current[3] = el}
+                            imageSrc="src/assets/20.jpg"
+                            imageWidth={imageWidths[3]}
+                            overlayHeader="Some header"
+                            overlayText="Learn more..."
+                            linkTo="/about"
+                        />
+                     <Card                           
+                            ref={el => imageRefs.current[4] = el}
+                            imageSrc="src/assets/5.jpg"
+                            imageWidth={imageWidths[4]}
+                            overlayHeader="Some header"
+                            overlayText="Learn more..."
+                            linkTo="/about"
+                        />
                 </div>
                 <div className={styles.imagesContainer} id="imagesContainer">
-                    <Link>
-                        <div className={styles.imgWrapper}>
-                            <img ref={el => imageRefs.current[5] = el} src="src/assets/1.jpg" alt="" />
-                            <div className={styles.innerWrapper} style={{ width: imageWidths[5] }}>
-                                <div className={styles.overlayText}>
-                                    <div className={styles.headInnerText}><h1>Some Header</h1></div>
-                                    <div className={styles.LernMoreInnerText}><p>Learn more about this...</p></div>
-                                </div>
-                            </div>
-                        </div>
-                    </Link>
-                    <Link>
-                        <div className={styles.imgWrapper}>
-                            <img ref={el => imageRefs.current[6] = el} src="src/assets/17.jpg" alt="" />
-                            <div className={styles.innerWrapper} style={{ width: imageWidths[6] }}>
-                                <div className={styles.overlayText}>
-                                    <div className={styles.headInnerText}><h1>Some Header</h1></div>
-                                    <div className={styles.LernMoreInnerText}><p>Learn more about this...</p></div>
-                                </div>
-                            </div>
-                        </div>
-                    </Link>
-                    <Link>
-                        <div className={styles.imgWrapper}>
-                            <img ref={el => imageRefs.current[7] = el} src="src/assets/3.jpg" alt="" />
-                            <div className={styles.innerWrapper} style={{ width: imageWidths[7] }}>
-                                <div className={styles.overlayText}>
-                                    <div className={styles.headInnerText}><h1>Some Header</h1></div>
-                                    <div className={styles.LernMoreInnerText}><p>Learn more about this...</p></div>
-                                </div>
-                            </div>
-                        </div>
-                    </Link>
-                    <Link>
-                        <div className={styles.imgWrapper}>
-                            <img ref={el => imageRefs.current[8] = el} src="src/assets/20.jpg" alt="" />
-                            <div className={styles.innerWrapper} style={{ width: imageWidths[8] }}>
-                                <div className={styles.overlayText}>
-                                    <div className={styles.headInnerText}><h1>Some Header</h1></div>
-                                    <div className={styles.LernMoreInnerText}><p>Learn more about this...</p></div>
-                                </div>
-                            </div>
-                        </div>
-                    </Link>
-                    <Link>
-                        <div className={styles.imgWrapper}>
-                            <img ref={el => imageRefs.current[9] = el} src="src/assets/5.jpg" alt="" />
-                            <div className={styles.innerWrapper} style={{ width: imageWidths[9] }}>
-                                <div className={styles.overlayText}>
-                                    <div className={styles.headInnerText}><h1>Some Header</h1></div>
-                                    <div className={styles.LernMoreInnerText}><p>Learn more about this...</p></div>
-                                </div>
-                            </div>
-                        </div>
-                    </Link>
+                         <Card                           
+                            ref={el => imageRefs.current[0] = el}
+                            imageSrc="src/assets/1.jpg"
+                            imageWidth={imageWidths[0]}
+                            overlayHeader="Some header"
+                            overlayText="Learn more..."
+                            linkTo="/about"
+                        />
+                     <Card                           
+                            ref={el => imageRefs.current[1] = el}
+                            imageSrc="src/assets/17.jpg"
+                            imageWidth={imageWidths[1]}
+                            overlayHeader="Some header"
+                            overlayText="Learn more..."
+                            linkTo="/about"
+                        />
+                     <Card                           
+                            ref={el => imageRefs.current[2] = el}
+                            imageSrc="src/assets/3.jpg"
+                            imageWidth={imageWidths[2]}
+                            overlayHeader="Some header"
+                            overlayText="Learn more..."
+                            linkTo="/about"
+                        />
+                    <Card                           
+                            ref={el => imageRefs.current[3] = el}
+                            imageSrc="src/assets/20.jpg"
+                            imageWidth={imageWidths[3]}
+                            overlayHeader="Some header"
+                            overlayText="Learn more..."
+                            linkTo="/about"
+                        />
+                     <Card                           
+                            ref={el => imageRefs.current[4] = el}
+                            imageSrc="src/assets/5.jpg"
+                            imageWidth={imageWidths[4]}
+                            overlayHeader="Some header"
+                            overlayText="Learn more..."
+                            linkTo="/about"
+                        />
                 </div>
             </div>
-           <div className={style.contactPageWrapper}>
+           <div className={styles.contactPageWrapper}>
                 <h1>Want to work together?</h1>
                 <p>Contact me !</p>
-                <p className={style.email}>email@example.com</p>
+                <p className={styles.email}>email@example.com</p>
            </div>
 
             <Footer />
