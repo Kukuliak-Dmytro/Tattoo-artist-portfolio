@@ -36,106 +36,116 @@ export default function Index() {
                 <p className={styles.paragraph}>Digital artist and tattoo designer</p>
             </Container>
             <div className={styles.aboutPageWrapper}>
-                <div className={styles.aboutImg}><img src='src/assets/selfir.jpg' alt="The photo of the artist" /></div>
+                <div className={styles.aboutImg}>
+                    <div className={styles.imgBorder}>
+                        <img src='src/assets/selfir.jpg' alt="The photo of the artist" />
+                    </div>
+                </div>
                 <div className={styles.aboutDesc}>
-                    <h1>Hi, I`m Valentine</h1>
+                    <h1>Greetings!</h1>
                     <p>
-                        Hello, I'm Valentine, a digital artist and tattoo designer. <br />Welcome to my website, where I`d like to share some of my works. Enjoy!
+                        Hello, I'm Valentine, a digital artist and tattoo designer. I live in Chernivtsi, Ukraine. I`ve been working with arts since I graduated college. <br />Welcome to my website, where I`d like to share some of my works. Enjoy!
                     </p>
                     <Link to="/about"><button className={styles.btn}>Learn more</button></Link>
                 </div>
             </div>
             <div className={styles.sliderWrapper}>
+            <h1 className={styles.myWorkHeading}>My work</h1>
+
                 <div className={styles.imagesContainer} id="imagesContainer">
-                         <Card                           
-                            ref={el => imageRefs.current[0] = el}
-                            imageSrc="src/assets/1.jpg"
-                            imageWidth={imageWidths[0]}
-                            overlayHeader="Some header"
-                            overlayText="Learn more..."
-                            linkTo="/about"
-                        />
-                     <Card                           
-                            ref={el => imageRefs.current[1] = el}
-                            imageSrc="src/assets/17.jpg"
-                            imageWidth={imageWidths[1]}
-                            overlayHeader="Some header"
-                            overlayText="Learn more..."
-                            linkTo="/about"
-                        />
-                     <Card                           
-                            ref={el => imageRefs.current[2] = el}
-                            imageSrc="src/assets/3.jpg"
-                            imageWidth={imageWidths[2]}
-                            overlayHeader="Some header"
-                            overlayText="Learn more..."
-                            linkTo="/about"
-                        />
-                    <Card                           
-                            ref={el => imageRefs.current[3] = el}
-                            imageSrc="src/assets/20.jpg"
-                            imageWidth={imageWidths[3]}
-                            overlayHeader="Some header"
-                            overlayText="Learn more..."
-                            linkTo="/about"
-                        />
-                     <Card                           
-                            ref={el => imageRefs.current[4] = el}
-                            imageSrc="src/assets/5.jpg"
-                            imageWidth={imageWidths[4]}
-                            overlayHeader="Some header"
-                            overlayText="Learn more..."
-                            linkTo="/about"
-                        />
+                    <Card
+                        ref={el => imageRefs.current[0] = el}
+                        imageSrc="src/assets/1.jpg"
+                        imageWidth={imageWidths[0]}
+                        overlayHeader="Some header"
+                        overlayText="Learn more..."
+                        linkTo="/about"
+                    />
+                    <Card
+                        ref={el => imageRefs.current[1] = el}
+                        imageSrc="src/assets/17.jpg"
+                        imageWidth={imageWidths[1]}
+                        overlayHeader="Some header"
+                        overlayText="Learn more..."
+                        linkTo="/about"
+                    />
+                    <Card
+                        ref={el => imageRefs.current[2] = el}
+                        imageSrc="src/assets/3.jpg"
+                        imageWidth={imageWidths[2]}
+                        overlayHeader="Some header"
+                        overlayText="Learn more..."
+                        linkTo="/about"
+                    />
+                    <Card
+                        ref={el => imageRefs.current[3] = el}
+                        imageSrc="src/assets/20.jpg"
+                        imageWidth={imageWidths[3]}
+                        overlayHeader="Some header"
+                        overlayText="Learn more..."
+                        linkTo="/about"
+                    />
+                    <Card
+                        ref={el => imageRefs.current[4] = el}
+                        imageSrc="src/assets/5.jpg"
+                        imageWidth={imageWidths[4]}
+                        overlayHeader="Some header"
+                        overlayText="Learn more..."
+                        linkTo="/about"
+                    />
                 </div>
                 <div className={styles.imagesContainer} id="imagesContainer">
-                         <Card                           
-                            ref={el => imageRefs.current[0] = el}
-                            imageSrc="src/assets/1.jpg"
-                            imageWidth={imageWidths[0]}
-                            overlayHeader="Some header"
-                            overlayText="Learn more..."
-                            linkTo="/about"
-                        />
-                     <Card                           
-                            ref={el => imageRefs.current[1] = el}
-                            imageSrc="src/assets/17.jpg"
-                            imageWidth={imageWidths[1]}
-                            overlayHeader="Some header"
-                            overlayText="Learn more..."
-                            linkTo="/about"
-                        />
-                     <Card                           
-                            ref={el => imageRefs.current[2] = el}
-                            imageSrc="src/assets/3.jpg"
-                            imageWidth={imageWidths[2]}
-                            overlayHeader="Some header"
-                            overlayText="Learn more..."
-                            linkTo="/about"
-                        />
-                    <Card                           
-                            ref={el => imageRefs.current[3] = el}
-                            imageSrc="src/assets/20.jpg"
-                            imageWidth={imageWidths[3]}
-                            overlayHeader="Some header"
-                            overlayText="Learn more..."
-                            linkTo="/about"
-                        />
-                     <Card                           
-                            ref={el => imageRefs.current[4] = el}
-                            imageSrc="src/assets/5.jpg"
-                            imageWidth={imageWidths[4]}
-                            overlayHeader="Some header"
-                            overlayText="Learn more..."
-                            linkTo="/about"
-                        />
+                    <Card
+                        ref={el => imageRefs.current[0] = el}
+                        imageSrc="src/assets/1.jpg"
+                        imageWidth={imageWidths[0]}
+                        overlayHeader="Some header"
+                        overlayText="Learn more..."
+                        linkTo="/about"
+                    />
+                    <Card
+                        ref={el => imageRefs.current[1] = el}
+                        imageSrc="src/assets/17.jpg"
+                        imageWidth={imageWidths[1]}
+                        overlayHeader="Some header"
+                        overlayText="Learn more..."
+                        linkTo="/about"
+                    />
+                    <Card
+                        ref={el => imageRefs.current[2] = el}
+                        imageSrc="src/assets/3.jpg"
+                        imageWidth={imageWidths[2]}
+                        overlayHeader="Some header"
+                        overlayText="Learn more..."
+                        linkTo="/about"
+                    />
+                    <Card
+                        ref={el => imageRefs.current[3] = el}
+                        imageSrc="src/assets/20.jpg"
+                        imageWidth={imageWidths[3]}
+                        overlayHeader="Some header"
+                        overlayText="Learn more..."
+                        linkTo="/about"
+                    />
+                    <Card
+                        ref={el => imageRefs.current[4] = el}
+                        imageSrc="src/assets/5.jpg"
+                        imageWidth={imageWidths[4]}
+                        overlayHeader="Some header"
+                        overlayText="Learn more..."
+                        linkTo="/about"
+                    />
                 </div>
             </div>
-           <div className={styles.contactPageWrapper}>
+            <div className={styles.contactPageWrapper}>
                 <h1>Want to work together?</h1>
-                <p>Contact me !</p>
-                <p className={styles.email}>email@example.com</p>
-           </div>
+                <p>Contact me !</p><br /> 
+            <p className={styles.email}>email@example.com</p>
+            <br />
+
+                <p>Or</p>
+                <Link to="/about"><button className={styles.btn}>Fill the form</button></Link>
+            </div>
 
             <Footer />
         </>

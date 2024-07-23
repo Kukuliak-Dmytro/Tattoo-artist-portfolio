@@ -8,21 +8,27 @@
 }
 
 .aboutPageWrapper {
-    height: 1080px;
+    height: auto;
     width: 100%;
     background-color: black;
     color: white;
     display: flex;
+    flex-direction: column;
     font-size: 1.75rem;
-    padding: 48px 12px;
+    padding:  12px;
     justify-content: center;
+    align-items: center;
 
 }
-
+.imgBorder{
+    display: flex;
+    justify-content: center;
+}
 .aboutImg img {
-    max-width: 500px;
-    margin-left: 100px;
+    max-width: 376px;
     border: 3px outset white;
+    height: auto;
+ 
 }
 
 .aboutDesc h1 {
@@ -63,7 +69,7 @@
 .imagesContainer {
     height: 100%;
     display: inline-block;
-    /* animation: slide 25s infinite linear ;  */
+ padding-top: 15px;
 }
 
 .slideAnimation {
@@ -150,18 +156,123 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     font-size: 2rem;
     position: relative;
 }
 
 .email {
     transition: 0.3s linear;
-    position: absolute;
-    bottom: 20%;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .email:hover {
     color: azure;
     font-size: larger;
 
+}
+.myWorkHeading{
+    text-align: center;
+    font-size: 4rem;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    border: 5px outset #dddddd   ;
+    border-right: 5px inset #dddddd;
+    width: 50%;
+    margin: auto
+}
+    
+/* Extra Small Devices, Phones (0px to 576px) */
+@media (max-width: 575.98px) {
+    .heading{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .paragraph{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .aboutDesc h1{
+      font-size: 2.75rem;
+    }
+    .aboutDesc{
+        text-align: center;
+        width: 85%;
+    }
+    .aboutImg img{
+        width: 80%;
+    }
+    .imgWrapper img{
+        width: max-content;
+    }
+    .myWorkHeading{
+        font-size: 2rem;
+    }
+    .imagesContainer{
+        height: 70%;
+    }
+    .headInnerText h1{
+        font-size:2.5rem;
+    }
+}
+
+/* Small Devices, Tablets (576px to 768px) */
+@media (min-width: 576px)  {
+    .aboutDesc{
+        text-align: center;
+        width: 85%;
+    }
+    .aboutImg{
+        border: 5px inset black;
+        padding: 25px;    
+    }
+    .imgBorder{
+        border: 5px outset black;
+        padding: 25px 0px 0px 25px;
+    }
+    .myWorkHeading{
+        font-size: 3rem;
+    }
+    .imagesContainer{
+        height: 100%;
+    }
+   
+}
+
+/* Medium Devices, Small Laptops (768px to 992px) */
+@media (min-width: 768px) {
+    .aboutPageWrapper{
+        flex-direction: row;
+        padding: 50px 50px;
+        font-size: 1.5rem;       
+    }
+    .aboutImg img{
+        width: 300px;
+    }
+    .aboutDesc{
+        text-align: right;
+    
+       }
+   
+    
+}
+
+/* Large Devices, Desktops (992px to 1200px) */
+@media (min-width: 992px) {
+   .aboutDesc{
+    text-align: right;
+   }
+   .aboutPageWrapper{
+    flex-direction: row;
+    padding: 50px;
+    font-size: 1.5rem;       
+}
+
+.aboutImg img{
+    width: 500px;
+}
+  
 }
