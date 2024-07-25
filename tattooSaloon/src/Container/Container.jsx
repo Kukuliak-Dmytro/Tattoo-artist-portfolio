@@ -10,7 +10,7 @@ export default function Container(props) {
         color: 'white',
         display:'flex',
         alignItems:'center',
-        justifyContent:'center',
+        justifyContent:`${props.justify}`,
         flexDirection:'column',
         fontSize:'2rem',
         fontWeight:'400'

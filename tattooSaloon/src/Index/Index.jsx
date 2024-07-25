@@ -21,7 +21,7 @@ export default function Index() {
                 containers.forEach(Element => Element.classList.add(`${styles.slideAnimation}`)
 
                 );
-            }, 100);
+            }, 1000);
         }
         animateAfter1Second();
 
@@ -31,7 +31,7 @@ export default function Index() {
     return (
         <>
             <Header />
-            <Container src='src/assets/main@0,5x.png' height={1080}>
+            <Container src='src/assets/main@0,5x.png' height={1080} justify="center">
                 <h1 className={styles.heading}>Valentine</h1>
                 <p className={styles.paragraph}>Digital artist and tattoo designer</p>
             </Container>
@@ -136,7 +136,14 @@ export default function Index() {
                         linkTo="/about"
                     />
                 </div>
+                <br />
+                
+
             </div>
+            <div style={{backgroundColor:"#dddddd", display:"flex", justifyContent:"center", paddingTop:"-100"}}>
+                <Link to="/catalog"><button className={styles.btn}>More work</button></Link>
+            </div>
+
             <div className={styles.contactPageWrapper}>
                 <h1>Want to work together?</h1>
                 <p>Contact me !</p><br /> 
@@ -144,7 +151,7 @@ export default function Index() {
             <br />
 
                 <p>Or</p>
-                <Link to="/about"><button className={styles.btn}>Fill the form</button></Link>
+                <Link to="/contact"><button className={styles.btn}>Fill the form</button></Link>
             </div>
 
             <Footer />
