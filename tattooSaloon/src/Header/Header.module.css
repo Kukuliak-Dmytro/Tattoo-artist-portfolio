@@ -1,7 +1,7 @@
 .headerWrapper {
     background-color: #CED4DA;
     height: 60px;
-    width: 100%;
+    width: 100vw;
     position: fixed;
     transition: 0.5s;
     z-index: 3;
@@ -13,6 +13,7 @@
     justify-content: space-between;
     height: 100%;
     padding: 12px;
+    padding-right: 24px;
 
 }
 
@@ -29,26 +30,28 @@
 
 .links {
     text-decoration: none;
-    color: inherit;
-    padding: 20px;
-    width: 200px;
+    color: inherit;   
+    width: max-content;
     transition: 0.5s;
+    padding-left: 20px;
+
+    
 
 }
+
 
 @media(min-width:768px) {
     .navbarToggle {
         display: none;
     }
+   
 
 }
 
 @media(max-width:768px) {
     .linksWrapper {
         position: absolute;
-        left: 40%;
-        top: 0;
-        pointer-events: none;
+        left: 30%;
 
     }
 
@@ -56,9 +59,8 @@
         display: flex;
         position: absolute;
         color: #CED4DA;
-        padding-top: 25px;
         font-size: 24px;
-        pointer-events: none;
+      
               
     }
 
@@ -87,7 +89,7 @@
 }
 
 .links.toggled1 {
-    transform: translateY(50%);
+    transform: translateY(150%);
     color: black;
     transition: 0.3s ease-in-out;
 
@@ -95,7 +97,7 @@
 }
 
 .links.toggled2 {
-    transform: translateY(100%);
+    transform: translateY(300%);
     color: black;
     transition: 0.4s;
 
@@ -103,7 +105,7 @@
 }
 
 .links.toggled3 {
-    transform: translateY(150%);
+    transform: translateY(450%);
     color: black;
     transition: 0.5s;
 
