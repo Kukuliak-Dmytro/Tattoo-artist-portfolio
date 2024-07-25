@@ -60,6 +60,7 @@
 
 /* The next part is for the carousel */
 .sliderWrapper {
+ 
     height: 900px;
     background-color: #dddddd;
     white-space: nowrap;
@@ -91,7 +92,7 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.867);
     transition: 0.5s;
-
+    width: max-content;
 
 }
 
@@ -114,6 +115,7 @@
 
 .imagesContainer .imgWrapper img {
     height: 100%;
+
     transition: 0.5s;
     z-index: 2;
     position: absolute;
@@ -218,6 +220,13 @@
     }
     .headInnerText h1{
         font-size:2.5rem;
+    }
+    .contactPageWrapper h1{
+        font-size: 3rem;
+        padding-bottom: 25px;
+    }
+    .contactPageWrapper .email{
+        font-size: 1.5rem;
     }
 }
 

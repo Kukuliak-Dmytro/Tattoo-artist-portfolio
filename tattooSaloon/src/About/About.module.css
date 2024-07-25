@@ -1,112 +1,297 @@
-.outerWrapper{
+.outerWrapper {
     display: flex;
     flex-direction: column;
     width: 80%;
 }
-.aboutContainer{
- display: flex;
- padding-top: 100px;
+
+.aboutContainer {
+    display: flex;
+    padding-top: 100px;
 }
-.aboutImg{
+
+.aboutImg {
     width: 376px;
 }
-.aboutImg img{
+
+.aboutImg img {
     margin: auto;
-   width: inherit;
+    width: min-content;
     border: 3px white inset;
 
 }
 
-.aboutDesc{
+.aboutDesc {
     padding-right: 25px;
     margin-left: 25px;
     text-align: right;
     border-bottom: 3px inset #dddddd;
     border-right: 3px outset #dddddd;
     border-radius: 0px 2px;
-       
+
 }
-.aboutDesc .p1{
+
+.aboutDesc .p1 {
     padding-top: .5rem;
-     color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
     border-bottom: 3px solid white;
     border-radius: 2px;
     padding-bottom: .5rem;
 
 }
-.aboutDesc .p2{
+
+.aboutDesc .p2 {
     padding-top: 1rem;
-   color: rgb(255, 255, 255,0.8);
-   line-height: 1.4;
-   font-size: smaller;
+    color: rgb(255, 255, 255, 0.8);
+    line-height: 1.4;
+    font-size: smaller;
 }
 
-.stats{
-
-    width: 85%;
+.stats {
+    background-color: #dddddd;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
+   
     padding: 30px;
-    border-top: 10px solid white;
-    border-radius: 9px;
-    clip-path: polygon(
-    0 20%,
-    10% 0,
-    90% 0,
-    100% 20%,
-    100% 80%,
-    90% 100%,
-    10% 100%,
-    0% 80%
-  )
-}
-.stats .experience{
-    flex: 1;
-}
-.stats .projects{
-    flex: 1;
-    text-align: right;
-}
 
-.stats p{
-    font-size: 2rem;
-    color:rgba(255, 255, 255, 0.8);
 }
-.projects span{
+.projects span {
     display: flex;
     justify-content: space-between;
 }
-.borderBetween{
-    border-left: 2px solid whitesmoke;
-    border-right: 1px solid whitesmoke;
-
+.projects{
+    width: 40%;
+}
+.experience{
+    width: 40%;
 }
 
-@media (max-width: 575.98px) {
- .aboutContainer{
-    flex-direction: column;
-    font-size: 1rem;
- }
- .aboutImg img{
-    width: 250px;
- }
+@media (max-width: 768px) {
+    .aboutContainer {
+        flex-direction: column-reverse;
+        font-size: 1.5rem;
+        align-items: center;
+        text-align: left;
+    }
+
+    .aboutImg {
+        width: 80vw;
+        padding-top: 35px;
+    }
+
+    .aboutImg img {
+        width: inherit;
+    }
+
+    .stats {
+        flex-direction: column;
+        background-color: #dddddd;
+        width: 100%;
+        margin-top: 0;
+        border: none;
+        clip-path: none;
+        color: black;
+
+    }
+    .projects, .experience{
+        width: 85vw;
+    }
+
+    .aboutDesc {
+        text-align: left;
+    }
+
+    .stats .experience p {
+        color: black;
+        padding-bottom: 5px;
+    }
+
+    .experience {
+        padding-bottom: 32px;
+
+        & h3 {
+            font-size: 20px;
+        }
+
+        & p:nth-child(2) {
+            font-size: 14px;
+            font-weight: 300;
+            border-bottom: 1px solid black;
+
+        }
+
+        & p:nth-child(3) {
+            font-size: 16px;
+            font-weight: 400;
+            border-bottom: 2px solid black;
+
+        }
+
+        & p:nth-child(4) {
+            font-size: 18px;
+            font-weight: 500;
+            border-bottom: 3px solid black;
+
+        }
+    }
+
+
+
+    .projects p {
+        color: black;
+        font-size: 1rem;
+    }
+
+    .projects {
+        & h3 {
+            text-align: left;
+            font-size: 20px;
+            /* Example font size for the heading */
+
+        }
+
+        & span:nth-child(2) {
+            font-size: 14px;
+            font-weight: 300;
+            border-bottom: 1px solid black;
+
+
+        }
+
+        & span:nth-child(3) {
+            font-size: 16px;
+            font-weight: 400;
+            border-bottom: 2px solid black;
+
+
+        }
+
+        & span:nth-child(4) {
+            font-size: 18px;
+            font-weight: 500;
+            border-bottom: 3px solid black;
+
+
+        }
+
+    }
 }
 
 /* Small Devices, Tablets (576px to 768px) */
-@media (min-width: 576px)  {
-  
+@media (min-width: 576px) {
+    .aboutImg {
+        width: 65vw;
+        padding-top: 35px;
+    }
+    .aboutImg img {
+        width: inherit;
+    }
+    
 }
 
 /* Medium Devices, Small Laptops (768px to 992px) */
 @media (min-width: 768px) {
-  
-   
+    .aboutImg{
+        width: 300px;
+    }
+    .aboutDesc{
+        font-size: 1.25rem;
+    }
     
+    .stats .experience p, .stats .projects span p{
+        color: black;
+    }
+    .stats{
+        height: auto;
+        transform: translateY(-100%);
+        position: absolute;
+    }
+    .experience {
+        padding-bottom: 32px;
+
+        & h3 {
+            font-size: 20px;
+        }
+
+        & p:nth-child(2) {
+            font-size: 14px;
+            font-weight: 300;
+            border-bottom: 1px solid black;
+
+        }
+
+        & p:nth-child(3) {
+            font-size: 16px;
+            font-weight: 400;
+            border-bottom: 2px solid black;
+
+        }
+
+        & p:nth-child(4) {
+            font-size: 18px;
+            font-weight: 500;
+            border-bottom: 3px solid black;
+
+        }
+    }
+    .projects {
+        & h3 {
+            text-align: left;
+            font-size: 20px;
+            
+
+        }
+
+        & span:nth-child(2) {
+            font-size: 14px;
+            font-weight: 300;
+            border-bottom: 1px solid black;
+
+
+        }
+
+        & span:nth-child(3) {
+            font-size: 16px;
+            font-weight: 400;
+            border-bottom: 2px solid black;
+
+
+        }
+
+        & span:nth-child(4) {
+            font-size: 18px;
+            font-weight: 500;
+            border-bottom: 3px solid black;
+
+
+        }
+
+    }
+
+
+}
+@media (min-width: 992px){
+    .aboutImg{
+        width: 400px;
+    }
+    .aboutDesc{
+        font-size: 1.75rem;
+    }
+}
+@media (min-width:1200px) {
+    .aboutImg{
+        width: 500px;
+    }
+    .aboutDesc{
+        font-size: 2rem;
+    }
+}
+@media (min-width:1800px) {
+    .aboutImg{
+        width: 500px;
+    }
+    .aboutDesc{
+        font-size: 3rem;
+    }
 }
 
-/* Large Devices, Desktops (992px to 1200px) */
-@media (min-width: 992px) {
- 
-  
-}

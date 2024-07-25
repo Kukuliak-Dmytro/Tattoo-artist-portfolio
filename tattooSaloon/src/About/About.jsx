@@ -25,7 +25,9 @@ export default function About() {
                 </div>
                
             </div>
-            <div className={styles.stats}>
+            
+        </Container>
+        <div className={styles.stats}>
                  <div className={styles.experience}>
                     <h3>Experience</h3>
                     <p>Designing and painting interiors</p>
@@ -35,13 +37,12 @@ export default function About() {
                  </div>
                  <div className={styles.projects}>
                  <h3>Projects completed</h3>
-                  <span><div> 2017-2020</div><div>23 projects</div> </span>
-                  <span> <div> 2020-2021</div><div>30 portraits</div></span>
-                  <span> <div> 2021-present</div><div>150 tattoes</div></span>
+                  <span><div> <p>2017-2020</p></div><div><p>23 projects</p></div> </span>
+                  <span> <div><p> 2020-2021</p></div><div><p>30 portraits</p></div></span>
+                  <span> <div> <p>2021-present</p></div><div><p>150 tattoes</p></div></span>
                   
                  </div>
                 </div>
-        </Container>
         <Footer></Footer>
     </>
     )
