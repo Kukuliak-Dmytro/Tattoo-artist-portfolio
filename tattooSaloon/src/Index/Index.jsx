@@ -49,46 +49,34 @@ export default function Index() {
                     <Link to="/about"><button className={styles.btn}>Learn more</button></Link>
                 </div>
             </div>
-            <div className={styles.sliderWrapper}>
-            <h1 className={styles.myWorkHeading}>My work</h1>
-
-              <div className={styles.imagesContainer}>
-                  <Card src="\src\assets\1.jpg">
-                  </Card>
-                  <Card src="\src\assets\17.jpg">
-                  </Card>
-                  <Card src="\src\assets\3.jpg">
-                  </Card>
-                  <Card src="\src\assets\20.jpg">
-                  </Card>
-                  <Card src="\src\assets\5.jpg">
-                  </Card>
-              </div>
-              <div className={styles.imagesContainer}>
-                  <Card src="\src\assets\1.jpg">
-                  </Card>
-                  <Card src="\src\assets\17.jpg">
-                  </Card>
-                  <Card src="\src\assets\3.jpg">
-                  </Card>
-                  <Card src="\src\assets\20.jpg">
-                  </Card>
-                  <Card src="\src\assets\5.jpg">
-                  </Card>
-              </div>
-                <br />
-                
+            <div className={styles.outerSliderWrapper}>
+                <div className={styles.sliderWrapper}>
+                    <h1 className={styles.myWorkHeading}>My work</h1>
+                    <div className={styles.imagesContainer}>
+                        <Card src="\src\assets\1.jpg" link="/catalog/1" heading="Memento mori"/>
+                        <Card src="\src\assets\17.jpg" link="/catalog/17"heading="Glyphs"/>
+                        <Card src="\src\assets\3.jpg" link="/catalog/3"heading="Drall"/>
+                        <Card src="\src\assets\20.jpg" link="/catalog/20"heading="Locus"/>
+                        <Card src="\src\assets\5.jpg" link="/catalog/5"heading="Prince"/>
+                    </div>
+                    <div className={styles.imagesContainer}>
+                        <Card src="\src\assets\1.jpg" link="/catalog/1" heading="Memento mori"/>
+                        <Card src="\src\assets\17.jpg" link="/catalog/17"heading="Glyphs"/>
+                        <Card src="\src\assets\3.jpg" link="/catalog/3"heading="Drall"/>
+                        <Card src="\src\assets\20.jpg" link="/catalog/20"heading="Locus"/>
+                        <Card src="\src\assets\5.jpg" link="/catalog/5"heading="Prince"/>
+                    </div>
+                    <br />
+                </div>
+              <Link to="/catalog"> <button className={styles.btn}>More work </button> </Link>
 
             </div>
-            <div style={{backgroundColor:"#dddddd", display:"flex", justifyContent:"center", paddingTop:"-100"}}>
-                <Link to="/catalog"><button className={styles.btn}>More work</button></Link>
-            </div>
-
+          
             <div className={styles.contactPageWrapper}>
                 <h1>Want to work together?</h1>
-                <p>Contact me !</p><br /> 
-            <p className={styles.email}>email@example.com</p>
-            <br />
+                <p>Contact me !</p><br />
+                <p className={styles.email}>email@example.com</p>
+                <br />
 
                 <p>Or</p>
                 <Link to="/contact"><button className={styles.btn}>Fill the form</button></Link>

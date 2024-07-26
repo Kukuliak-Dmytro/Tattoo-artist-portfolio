@@ -15,20 +15,22 @@
     display: flex;
     flex-direction: column;
     font-size: 1.75rem;
-    padding:  12px;
+    padding: 12px;
     justify-content: center;
     align-items: center;
 
 }
-.imgBorder{
+
+.imgBorder {
     display: flex;
     justify-content: center;
 }
+
 .aboutImg img {
     max-width: 376px;
     border: 3px outset white;
     height: auto;
- 
+
 }
 
 .aboutDesc h1 {
@@ -50,6 +52,7 @@
     cursor: pointer;
     transition: 0.3s;
     font-weight: 400;
+    width: 200px;
 
     &:hover {
         background-color: rgb(0, 0, 0);
@@ -59,18 +62,28 @@
 }
 
 /* The next part is for the carousel */
-.sliderWrapper { 
-    height: 900px;
+.outerSliderWrapper {
+    height: min-content;
+    display: flex;
+    flex-direction: column;
+    background-color: #dddddd;
+    align-items: center;
+    width: 100%;
+}
+
+.sliderWrapper {
+    width: inherit;
+
     background-color: #dddddd;
     white-space: nowrap;
     overflow: hidden;
-    padding: 60px 0px;
+
 }
 
 .imagesContainer {
     display: inline-block;
     padding-top: 15px;
-    padding-bottom: 15px ;
+    padding-bottom: 15px;
 }
 
 .slideAnimation {
@@ -79,10 +92,67 @@
 
 
 .imagesContainer .cardContainer {
-    height: 91%;
+
     display: inline-block;
     position: relative;
     margin: 10px;
+
+}
+
+.cardContainer {
+    height: 600px;
+    width: 40vw;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.outerWrapper {
+    height: inherit;
+    width: inherit;
+    background-color: black;
+    position: relative;
+    z-index: 1;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.innerWrapper{
+    text-align: center;
+}
+.innerWrapper h1{
+    margin-bottom: 200px;
+    font-size: 3rem;
+}
+.innerWrapper p{
+    font-size: 1.5rem;
+}
+
+.cardContainer img {
+    position: absolute;
+    height: inherit;
+    width: inherit;
+    object-fit: cover;
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+
+.cardContainer img,
+.cardContainer .outerWrapper {
+    transition: 0.5s;
+    transition-delay: 0.15s;
+}
+
+.cardContainer:hover img {
+    transform: translateY(-1rem);
+    opacity: 0.3;
+
+}
+
+.cardContainer:hover .outerWrapper {
+    transform: translateY(-1rem);
 
 }
 
@@ -99,7 +169,7 @@
 
 /* The next part is the chunk that leads to the contact page */
 .contactPageWrapper {
-    height: 720px;
+    height: auto;
     width: 100%;
     background-color: black;
     color: white;
@@ -124,154 +194,152 @@
     font-size: larger;
 
 }
-.myWorkHeading{
+
+.myWorkHeading {
     text-align: center;
     font-size: 4rem;
     padding-bottom: 15px;
     margin-bottom: 15px;
     font-family: 'Courier New', Courier, monospace;
-    border: 5px outset #dddddd   ;
+    border: 5px outset #dddddd;
     border-right: 5px inset #dddddd;
     width: 50%;
     margin: auto
 }
-    
+
 /* Extra Small Devices, Phones (0px to 576px) */
 @media (max-width: 575.98px) {
-    .heading{
+    .heading {
         font-size: 2.5rem;
         text-align: center;
     }
-    .paragraph{
+
+    .paragraph {
         text-align: center;
         font-size: 1.5rem;
     }
-    .aboutDesc h1{
-      font-size: 2.75rem;
+
+    .aboutDesc h1 {
+        font-size: 2.75rem;
     }
-    .aboutDesc{
+
+    .aboutDesc {
         text-align: center;
         width: 85%;
     }
-    .aboutImg img{
+
+    .aboutImg img {
         width: 80%;
     }
-    .imgWrapper img{
+
+    .imgWrapper img {
         width: max-content;
     }
-    .myWorkHeading{
+
+    .myWorkHeading {
         font-size: 2rem;
     }
-    .imagesContainer{
+
+    .imagesContainer {
         height: 70%;
     }
-    .headInnerText h1{
-        font-size:2.5rem;
+
+    .headInnerText h1 {
+        font-size: 2.5rem;
     }
-    .contactPageWrapper h1{
+
+    .contactPageWrapper h1 {
         font-size: 3rem;
         padding-bottom: 25px;
     }
-    .contactPageWrapper .email{
+
+    .contactPageWrapper .email {
         font-size: 1.5rem;
+    }
+
+    .cardContainer {
+        width: 90vw;
+        height: 400px;
     }
 }
 
 /* Small Devices, Tablets (576px to 768px) */
-@media (min-width: 576px)  {
-    .aboutDesc{
+@media (min-width: 576px) {
+    .aboutDesc {
         text-align: center;
         width: 85%;
     }
-    .aboutImg{
+
+    .aboutImg {
         border: 5px inset black;
-        padding: 25px;    
+        padding: 25px;
     }
-    .imgBorder{
+
+    .imgBorder {
         border: 5px outset black;
         padding: 25px 0px 0px 25px;
     }
-    .myWorkHeading{
+
+    .myWorkHeading {
         font-size: 3rem;
     }
-    .imagesContainer{
+
+    .imagesContainer {
         height: 100%;
     }
-   
+
+    .cardContainer {
+        width: 90vw;
+        height: 400px;
+    }
+
+
+
 }
 
 /* Medium Devices, Small Laptops (768px to 992px) */
 @media (min-width: 768px) {
-    .aboutPageWrapper{
+    .aboutPageWrapper {
         flex-direction: row;
         padding: 50px 50px;
-        font-size: 1.5rem;       
+        font-size: 1.5rem;
     }
-    .aboutImg img{
+
+    .aboutImg img {
         width: 300px;
     }
-    .aboutDesc{
+
+    .aboutDesc {
         text-align: right;
-    
-       }
-   
-    
+
+    }
+
+    .cardContainer {
+        width: 50vw;
+    }
+
+
 }
 
 /* Large Devices, Desktops (992px to 1200px) */
 @media (min-width: 992px) {
-   .aboutDesc{
-    text-align: right;
-   }
-   .aboutPageWrapper{
-    flex-direction: row;
-    padding: 50px;
-    font-size: 1.5rem;       
-}
+    .aboutDesc {
+        text-align: right;
+    }
 
-.aboutImg img{
-    width: 500px;
-}
-  
-}
+    .aboutPageWrapper {
+        flex-direction: row;
+        padding: 50px;
+        font-size: 1.5rem;
+    }
 
-.cardContainer{
-    height: 70vh;
-    width: 30vw;
-    position: relative;
+    .aboutImg img {
+        width: 500px;
+    }
 
-}
-.outerWrapper{
-    height: inherit;
-    width: inherit;    
-    background-color: black;
-    position: relative;
-    z-index: 1;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.cardContainer img{
-    position: absolute;
-    height: inherit;
-    width: inherit;
-    object-fit:cover;
-    z-index: 2;
-    top: 0;
-    left: 0;
-}
-.cardContainer img, .cardContainer .outerWrapper{
-    transition: 0.5s;
-    transition-delay: 0.15s;
-}
-.cardContainer:hover img {
-    transform: translateY(-1rem);
-    opacity: 0.3;
-
-}
-
-.cardContainer:hover .outerWrapper {
-    transform: translateY(-1rem);
+    .cardContainer {
+        width: 30vw;
+        height: 80vh;
+    }
 
 }
