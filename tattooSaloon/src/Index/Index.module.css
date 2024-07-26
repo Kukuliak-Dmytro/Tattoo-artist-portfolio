@@ -59,8 +59,7 @@
 }
 
 /* The next part is for the carousel */
-.sliderWrapper {
- 
+.sliderWrapper { 
     height: 900px;
     background-color: #dddddd;
     white-space: nowrap;
@@ -69,7 +68,6 @@
 }
 
 .imagesContainer {
-    height: 91%;
     display: inline-block;
     padding-top: 15px;
     padding-bottom: 15px ;
@@ -80,63 +78,12 @@
 }
 
 
-.imagesContainer .imgWrapper {
+.imagesContainer .cardContainer {
     height: 91%;
     display: inline-block;
     position: relative;
     margin: 10px;
 
-}
-
-.imgWrapper .innerWrapper {
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.867);
-    transition: 0.5s;
-    width: max-content;
-
-}
-
-.imgWrapper .overlayText {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: rgb(255, 255, 255);
-    font-size: 2rem;
-    z-index: 1;
-    
-    text-align: center;
-
-}
-.imgWrapper .overlayText .headInnerText{
-    padding-bottom: 70%;
-    font-size: 1.5rem;
-}
-
-.imagesContainer .imgWrapper img {
-    height: 100%;
-
-    transition: 0.5s;
-    z-index: 2;
-    position: absolute;
-
-}
-.imagesContainer .innerWrapper, .imagesContainer .imgWrapper img{
-    transition-delay: 0.15s ;
-
-}
-
-.imagesContainer img:hover {
-    transform: translateY(-1rem);
-    opacity: 0.3;
-
-}
-
-
-.imagesContainer img:hover+ .innerWrapper {
-    transform: translateY(-1rem);
-
-    
 }
 
 
@@ -286,4 +233,45 @@
     width: 500px;
 }
   
+}
+
+.cardContainer{
+    height: 70vh;
+    width: 30vw;
+    position: relative;
+
+}
+.outerWrapper{
+    height: inherit;
+    width: inherit;    
+    background-color: black;
+    position: relative;
+    z-index: 1;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cardContainer img{
+    position: absolute;
+    height: inherit;
+    width: inherit;
+    object-fit:cover;
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+.cardContainer img, .cardContainer .outerWrapper{
+    transition: 0.5s;
+    transition-delay: 0.15s;
+}
+.cardContainer:hover img {
+    transform: translateY(-1rem);
+    opacity: 0.3;
+
+}
+
+.cardContainer:hover .outerWrapper {
+    transform: translateY(-1rem);
+
 }

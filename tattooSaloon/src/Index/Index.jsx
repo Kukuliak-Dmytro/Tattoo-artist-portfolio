@@ -52,90 +52,30 @@ export default function Index() {
             <div className={styles.sliderWrapper}>
             <h1 className={styles.myWorkHeading}>My work</h1>
 
-                <div className={styles.imagesContainer} id="imagesContainer">
-                    <Card
-                        ref={el => imageRefs.current[0] = el}
-                        imageSrc="src/assets/1.jpg"
-                        imageWidth={imageWidths[0]}
-                        overlayHeader="Some header"
-                        overlayText="Learn more..."
-                        linkTo="/about"
-                    />
-                    <Card
-                        ref={el => imageRefs.current[1] = el}
-                        imageSrc="src/assets/17.jpg"
-                        imageWidth={imageWidths[1]}
-                        overlayHeader="Some header"
-                        overlayText="Learn more..."
-                        linkTo="/about"
-                    />
-                    <Card
-                        ref={el => imageRefs.current[2] = el}
-                        imageSrc="src/assets/3.jpg"
-                        imageWidth={imageWidths[2]}
-                        overlayHeader="Some header"
-                        overlayText="Learn more..."
-                        linkTo="/about"
-                    />
-                    <Card
-                        ref={el => imageRefs.current[3] = el}
-                        imageSrc="src/assets/20.jpg"
-                        imageWidth={imageWidths[3]}
-                        overlayHeader="Some header"
-                        overlayText="Learn more..."
-                        linkTo="/about"
-                    />
-                    <Card
-                        ref={el => imageRefs.current[4] = el}
-                        imageSrc="src/assets/5.jpg"
-                        imageWidth={imageWidths[4]}
-                        overlayHeader="Some header"
-                        overlayText="Learn more..."
-                        linkTo="/about"
-                    />
-                </div>
-                <div className={styles.imagesContainer} id="imagesContainer">
-                    <Card
-                        ref={el => imageRefs.current[0] = el}
-                        imageSrc="src/assets/1.jpg"
-                        imageWidth={imageWidths[0]}
-                        overlayHeader="Some header"
-                        overlayText="Learn more..."
-                        linkTo="/about"
-                    />
-                    <Card
-                        ref={el => imageRefs.current[1] = el}
-                        imageSrc="src/assets/17.jpg"
-                        imageWidth={imageWidths[1]}
-                        overlayHeader="Some header"
-                        overlayText="Learn more..."
-                        linkTo="/about"
-                    />
-                    <Card
-                        ref={el => imageRefs.current[2] = el}
-                        imageSrc="src/assets/3.jpg"
-                        imageWidth={imageWidths[2]}
-                        overlayHeader="Some header"
-                        overlayText="Learn more..."
-                        linkTo="/about"
-                    />
-                    <Card
-                        ref={el => imageRefs.current[3] = el}
-                        imageSrc="src/assets/20.jpg"
-                        imageWidth={imageWidths[3]}
-                        overlayHeader="Some header"
-                        overlayText="Learn more..."
-                        linkTo="/about"
-                    />
-                    <Card
-                        ref={el => imageRefs.current[4] = el}
-                        imageSrc="src/assets/5.jpg"
-                        imageWidth={imageWidths[4]}
-                        overlayHeader="Some header"
-                        overlayText="Learn more..."
-                        linkTo="/about"
-                    />
-                </div>
+              <div className={styles.imagesContainer}>
+                  <Card src="\src\assets\1.jpg">
+                  </Card>
+                  <Card src="\src\assets\17.jpg">
+                  </Card>
+                  <Card src="\src\assets\3.jpg">
+                  </Card>
+                  <Card src="\src\assets\20.jpg">
+                  </Card>
+                  <Card src="\src\assets\5.jpg">
+                  </Card>
+              </div>
+              <div className={styles.imagesContainer}>
+                  <Card src="\src\assets\1.jpg">
+                  </Card>
+                  <Card src="\src\assets\17.jpg">
+                  </Card>
+                  <Card src="\src\assets\3.jpg">
+                  </Card>
+                  <Card src="\src\assets\20.jpg">
+                  </Card>
+                  <Card src="\src\assets\5.jpg">
+                  </Card>
+              </div>
                 <br />
                 
 
