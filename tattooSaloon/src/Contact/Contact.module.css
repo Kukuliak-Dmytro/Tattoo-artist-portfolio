@@ -1,0 +1,15 @@
+.contactWrapper{
+    width: 900px;
+    height: min-content;
+    padding-top: 60px;
+}
+.headerWrapper{
+    display: flex;
+}
+.pairWrapper{
+    display: grid;
+    
+}
+.groupWrapper{
+    display: flex;
+}

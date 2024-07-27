@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import Index from './Index/Index.jsx';
 import About from './About/About.jsx';
+import Contact from './Contact/Contact.jsx';
 import './main.css'
 import {createBrowserRouter,  RouterProvider,} from "react-router-dom";
 const router = createBrowserRouter([
@@ -19,7 +20,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/contact",
-    element: <h1>Book</h1>,
+    element: <Contact/>,
   },
   {
     path: "*",

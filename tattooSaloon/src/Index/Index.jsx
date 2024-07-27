@@ -6,14 +6,10 @@ import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import styles from './Index.module.css';
 
-export default function Index() {
-    const [imageWidths, setImageWidths] = useState([]);
-    const imageRefs = useRef([]);
+export default function Index() {   
 
     useEffect(() => {
-        const widths = imageRefs.current.map(img => img.offsetWidth);
-        setImageWidths(widths);
-
+  
         const containers = document.querySelectorAll(`.${styles.imagesContainer}`);
 
         const animateAfter1Second = () => {
