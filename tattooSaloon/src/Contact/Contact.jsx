@@ -3,12 +3,27 @@ import Header from "../Header/Header"
 import Footer from "../Footer/Footer"
 import styles from './Contact.module.css'
 import { MdEmail } from "react-icons/md";
+import { useState } from "react";
+import { Link } from "react-router-dom";
+
+    
 export default function Contact(){
-  
-    return(
+    const [alertText, setAlertText] = useState('Copy text?');
+
+    const handleClick = () => {
+        setAlertText('Copied to clipboard!');
+        navigator.clipboard.writeText("hello@example.com");
+    };
+
+    const handleMouseLeave = () => {
+        setTimeout(() => {
+            setAlertText('Copy text?');
+        }, 300);
+    };
+      return(
         <>      
         <Header/>
-        <Container src='src/assets/search.png' height={1200}>
+        <Container src='src/assets/search.png' height={1080}>
         <div className={styles.contactWrapper}>
             <div className={styles.headerWrapper}>
                 <div className={styles.leftPart}>
@@ -16,14 +31,18 @@ export default function Contact(){
                     <h3>Leave your contact info via the form, or get in touch via my email:</h3>
                 </div>
                 <div className={styles.rightPart}>
-                    <div className={styles.emailAlert}></div>
-                  <div className={styles.emailCard} onClick={()=>{navigator.clipboard.writeText("hello@example.com")}}>
+                  <div className={styles.emailCard}
+                    onClick={handleClick}
+                    onMouseLeave={handleMouseLeave}
+                    >
                     <div>
                         <h1>Email</h1>
                         <p>hello@example.com</p>                        
                     </div>
                     <MdEmail/>
                   </div>
+                  <div className={`${styles.emailAlert}`}>{alertText}</div>
+
                 </div>
             </div>
             <div className={styles.formWrapper}>
@@ -55,6 +74,7 @@ export default function Contact(){
 
                 </form>
             </div>
+            <Link><button className={styles.submitBtn}>Submit</button></Link>
         </div>
         </Container>
         <Footer/>
