@@ -4,12 +4,69 @@
     padding-top: 60px;
 }
 .headerWrapper{
+    padding-top: 60px;
     display: flex;
+    gap: 30px;
+    padding-bottom: 60px;
+    font-size: 1rem;
+    :nth-child(1){
+        flex: 1;      
+    }
+    :nth-child(2){
+        flex: 1;
+    }
+}
+.leftPart{
+    h1{
+        font-size: 4rem;
+        font-weight: 500;
+        line-height: 1;
+        padding-bottom: 1.5rem;
+    }
+    h3{
+        color: rgba(255, 255, 255, 0.8);
+        font-weight: 500;
+    }
+}
+.rightPart{
+    display: flex;    
+    align-items: end;
+    position: relative;
+
+}
+.rightPart .emailCard{
+    display: flex;
+    background-color: black;
+    border: 3px outset white;
+    padding: 1rem;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.emailCard svg{
+    height:60px;
+    padding-left: 150px;
+    }
+.formWrapper input, .formWrapper textarea{
+   height: 2.25rem;
+   border: 3px outset white;
+   background-color: rgba(221, 221, 221, 0.5);
+   opacity: 0.8;
+}
+.formWrapper textarea{
+    height: 10rem;
+    resize: none;
+}
+.formWrapper label{
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255);
 }
 .pairWrapper{
     display: grid;
-    
+    width: 100%;
+    padding-bottom: 1rem;
 }
 .groupWrapper{
     display: flex;
+    gap: 30px;
 }

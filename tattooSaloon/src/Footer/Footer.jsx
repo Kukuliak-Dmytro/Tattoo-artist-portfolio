@@ -19,7 +19,7 @@ export default function Footer(){
                     </a>
                 </ul>
             </div>
-            <div className={styles.lowerHalf}>© {new Date().getFullYear()}, Valentine</div>
+            <div className={styles.lowerHalf}>© {new Date().getFullYear()}, Valentine. All rights reserved.</div>
         </div>
         </footer>
     )
