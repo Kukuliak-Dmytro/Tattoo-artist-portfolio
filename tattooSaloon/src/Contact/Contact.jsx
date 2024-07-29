@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
     
 export default function Contact(){
-    const [alertText, setAlertText] = useState('Copy text?');
+    const [alertText, setAlertText] = useState('Copy email?');
 
     const handleClick = () => {
         setAlertText('Copied to clipboard!');
@@ -17,7 +17,7 @@ export default function Contact(){
 
     const handleMouseLeave = () => {
         setTimeout(() => {
-            setAlertText('Copy text?');
+            setAlertText('Copy email?');
         }, 300);
     };
       return(
@@ -39,7 +39,7 @@ export default function Contact(){
                         <h1>Email</h1>
                         <p>hello@example.com</p>                        
                     </div>
-                    <MdEmail/>
+                    <div ><MdEmail/></div>
                   </div>
                   <div className={`${styles.emailAlert}`}>{alertText}</div>
 
@@ -69,7 +69,7 @@ export default function Contact(){
                     </div>
                     <div className={styles.pairWrapper} >
                         <label htmlFor="letterContent">Message</label>
-                        <textarea  id="letterContent"></textarea>
+                        <textarea id="letterContent"></textarea>
                     </div>
 
                 </form>

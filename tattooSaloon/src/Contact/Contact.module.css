@@ -1,5 +1,5 @@
 .contactWrapper {
-    width: 900px;
+    width: 70%;
     height: min-content;
     padding-top: 60px;
 }
@@ -10,6 +10,7 @@
     gap: 30px;
     padding-bottom: 100px;
     font-size: 1rem;
+    flex-direction: row;
 
     :nth-child(1) {
         flex: 1;
@@ -36,45 +37,54 @@
 
 .rightPart {
     display: flex;
-    flex-direction: row;
     align-items: end;
     position: relative;
-
+    height: min-content;
+    margin-top: 100px;
 }
 
 .rightPart .emailCard {
     display: flex;
+    width: 100%;
     background-color: black;
     border: 3px outset white;
     padding: 1rem;
     justify-content: center;
     cursor: pointer;
+    align-items: center;
+    :nth-child(1){
+        flex: 2;
+    }
+    :nth-child(2){
+        display: flex;
+        flex:1;
+     
+    }
 }
 
-.emailCard svg {
-    height: 60px;
+
+.emailCard div svg {
+    height: 60px; 
 }
 
 .emailAlert {
-    width: 200px;
+    width: 11rem;
     height: 50px;
+    padding: 0.5rem;
     align-content: center;
     text-align: center;
     background-color: #dddddd;
     color: black;
     position: absolute;
-    bottom: 50%;
-    left: 0;
-    transform: translateX(50%);
+    top:-50px;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 1;
     transition: 0.5s;
     opacity: 0;
     pointer-events: none;
-    border: 3px solid white;
-   
-
-
-    &::after {
+    border: 3px outset   rgb(138, 138, 138);
+        &::after {
         content: "";
         background-color: #dddddd;
         width: 10px;
@@ -84,8 +94,8 @@
         right: 50%;
         bottom: -7.5px;
         z-index: -1;
-        border-right: 3px solid white;
-        border-bottom: 3px solid white;
+        border-right: 3px solid rgb(138, 138, 138);
+        border-bottom: 3px solid rgb(138, 138, 138);
 
     }
    
@@ -94,9 +104,7 @@
 }
 .emailCard:hover + .emailAlert{
     opacity: 1;
-    transform: translate3d(50%,-1rem,0);
-}
-.disabled {
+    transform: translate(-50%, -1rem);
 }
 
 .formWrapper input,
@@ -108,7 +116,7 @@
 }
 
 .formWrapper textarea {
-    height: 10rem;
+    height: 45vh;
     resize: none;
 }
 
@@ -137,10 +145,47 @@
     font-weight: 400;
     width: 200px;
     transform: translateX(-50%);
-    margin-left: 50%;
-    margin-top: 100px;
+    margin-left: 50%;    
+    transition-duration: 0.5s;
     &:hover{
         color: white;
         background-color: black;
+        border: rgb(215, 215, 215) outset 3px;
     }
 }
+@media (max-width:768px) {
+    .contactWrapper{
+        width: 90%;
+        h1{
+            font-size: 3rem;
+        }
+    }
+    .headerWrapper{
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+    .rightPart{
+        margin-top: 0px;
+    }
+    .emailCard{
+        h1{
+            font-size: 2rem;
+        }
+        p{
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+    }
+    .groupWrapper{
+        flex-direction: column;
+        gap:0;
+    }
+    .formWrapper textarea{
+        height: 20vh;
+    }
+}
+@media (max-width:992px) {
+   .contactWrapper{
+    width: 80%;
+   } 
+} 
