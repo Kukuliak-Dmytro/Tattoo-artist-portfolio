@@ -1,0 +1,48 @@
+.searchContainer {
+    height: 45px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.searchContainer form {
+    display: flex;
+    height: inherit;
+    flex: 9;
+}
+
+.searchContainer form .search {
+    height: 100%;
+    width: 100%;
+    border: 3px outset white;
+    background-color: rgba(221, 221, 221, 0.5);
+    font-size: 2rem;
+    padding: 1px 2px;
+
+    &::placeholder {
+        color: black;
+        font-weight: 500;
+        padding-left: 15px;
+
+    }
+}
+
+.searchContainer .searchBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    flex: 1;
+    background-color: rgb(0, 0, 0, 0.5);
+    border: 3px outset white;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+/* -------------------------------- */
+.cardsWrapper{
+    height: 900px;
+    background-color: #dddddd;
+}

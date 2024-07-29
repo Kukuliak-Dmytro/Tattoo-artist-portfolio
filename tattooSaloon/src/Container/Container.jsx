@@ -4,7 +4,7 @@ export default function Container(props) {
     const containerStyles = {
         backgroundImage: `url(${props.src})`, // Correctly formatted URL
         backgroundSize: 'cover', // Optional: Make sure the background covers the container
-        backgroundPosition: 'center', // Optional: Center the background image
+        backgroundPosition: 'top', // Optional: Center the background image
         width: '100%', // Optional: Set width if necessary
         height: `${props.height}px`, // Optional: Set height if necessary
         color: 'white',
@@ -13,7 +13,8 @@ export default function Container(props) {
         justifyContent:`${props.justify}`,
         flexDirection:'column',
         fontSize:'2rem',
-        fontWeight:'400'
+        fontWeight:'400',
+        paddingTop:'60px',
     };
 
     return (
