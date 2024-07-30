@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Index.module.css';
 
-const Card = React.forwardRef((props) => (
+const Card = (props) => (
     <Link to={props.link}>
     <div className={styles.cardContainer}>
         
@@ -17,6 +17,6 @@ const Card = React.forwardRef((props) => (
     </div>
     </Link>
        
-));
+);
 
 export default Card;

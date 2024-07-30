@@ -39,7 +39,7 @@ export default function Header() {
                             About us
                         </Link>
                         <Link
-                            to="/catalog"
+                            to="/catalog/1"
                             className={`${styles.links} ${toggled ? styles.toggled2 : ''}`}
                             style={{ fontWeight: "700", pointerEvents: `${toggled || isWide ? 'all' : 'none'}` }}
                         >

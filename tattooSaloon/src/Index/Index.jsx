@@ -49,18 +49,18 @@ export default function Index() {
                 <div className={styles.sliderWrapper}>
                     <h1 className={styles.myWorkHeading}>My work</h1>
                     <div className={styles.imagesContainer}>
-                        <Card src="\src\assets\1.jpg" link="/catalog/1" heading="Memento mori"/>
-                        <Card src="\src\assets\17.jpg" link="/catalog/17"heading="Glyphs"/>
-                        <Card src="\src\assets\3.jpg" link="/catalog/3"heading="Drall"/>
-                        <Card src="\src\assets\20.jpg" link="/catalog/20"heading="Locus"/>
-                        <Card src="\src\assets\5.jpg" link="/catalog/5"heading="Prince"/>
+                        <Card src="\src\assets\1.jpg" link="/catalog/view/1" heading="Memento mori"/>
+                        <Card src="\src\assets\17.jpg" link="/catalog/view/17"heading="Glyphs"/>
+                        <Card src="\src\assets\3.jpg" link="/catalog/view/3"heading="Drall"/>
+                        <Card src="\src\assets\20.jpg" link="/catalog/view/20"heading="Locus"/>
+                        <Card src="\src\assets\5.jpg" link="/catalog/view/5"heading="Prince"/>
                     </div>
                     <div className={styles.imagesContainer}>
-                        <Card src="\src\assets\1.jpg" link="/catalog/1" heading="Memento mori"/>
-                        <Card src="\src\assets\17.jpg" link="/catalog/17"heading="Glyphs"/>
-                        <Card src="\src\assets\3.jpg" link="/catalog/3"heading="Drall"/>
-                        <Card src="\src\assets\20.jpg" link="/catalog/20"heading="Locus"/>
-                        <Card src="\src\assets\5.jpg" link="/catalog/5"heading="Prince"/>
+                        <Card src="\src\assets\1.jpg" link="/catalog/view/1" heading="Memento mori"/>
+                        <Card src="\src\assets\17.jpg" link="/catalog/view/17"heading="Glyphs"/>
+                        <Card src="\src\assets\3.jpg" link="/catalog/view/3"heading="Drall"/>
+                        <Card src="\src\assets\20.jpg" link="/catalog/view/20"heading="Locus"/>
+                        <Card src="\src\assets\5.jpg" link="/catalog/view/5"heading="Prince"/>
                     </div>
                     <br />
                 </div>

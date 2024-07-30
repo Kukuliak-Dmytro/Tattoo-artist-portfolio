@@ -16,7 +16,12 @@ const router = createBrowserRouter([
     element: <About/>,
   },
   {
-    path: "/catalog",
+    path: "/catalog/:pageNo",
+    element: <Catalog/>,
+  },
+  {
+    path: "/catalog/view/:picNo",
+    // A dynamic page is required here
     element: <Catalog/>,
   },
   {
@@ -30,7 +35,10 @@ const router = createBrowserRouter([
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
+  
   <React.StrictMode>
-           <RouterProvider router={router} />
+
+           <RouterProvider router={router}/>
+           
   </React.StrictMode>,
 )

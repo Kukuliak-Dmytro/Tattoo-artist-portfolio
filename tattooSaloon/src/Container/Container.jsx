@@ -1,6 +1,9 @@
 import React from 'react';
-
+import { useEffect } from 'react';
 export default function Container(props) {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, [props.src]);
     const containerStyles = {
         backgroundImage: `url(${props.src})`, // Correctly formatted URL
         backgroundSize: 'cover', // Optional: Make sure the background covers the container
