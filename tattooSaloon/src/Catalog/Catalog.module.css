@@ -43,6 +43,12 @@
 }
 /* -------------------------------- */
 .cardsWrapper{
-    height: 900px;
-    background-color: #dddddd;
+    height: max-content;
+    width: 100%;
+    padding: 50px 0px;
+    background-color: beige;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    gap: 50px 30px;
 }

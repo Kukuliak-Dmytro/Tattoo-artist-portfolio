@@ -22,6 +22,7 @@ export default function Header() {
     };
 
     return (
+        <>
         <header>
             <div className={styles.headerWrapper} style={{ height: `${toggled ? '240px' : '60px'}` }}>
                 <div className={styles.headerInner}>
@@ -55,5 +56,7 @@ export default function Header() {
                 </div>
             </div>
         </header>
+        <div style={{width:"100%", height:"60px"}}></div>
+        </>
     );
 }

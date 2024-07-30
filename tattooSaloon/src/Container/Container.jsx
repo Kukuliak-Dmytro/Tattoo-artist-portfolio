@@ -14,7 +14,6 @@ export default function Container(props) {
         flexDirection:'column',
         fontSize:'2rem',
         fontWeight:'400',
-        paddingTop:'60px',
     };
 
     return (
