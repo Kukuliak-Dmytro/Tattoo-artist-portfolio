@@ -28,7 +28,7 @@ export default function Index() {
         <>
             <Header />
             
-            <Container src="/Tattoo-artist-portfolio/images/main@0,5x.png" height={1080} justify="center">
+            <Container src="/Tattoo-artist-portfolio/public/images/main@0,5x.png" height={1080} justify="center">
                 <h1 className={styles.heading}>Valentine</h1>
                 <p className={styles.paragraph}>Digital artist and tattoo designer</p>
             </Container>
