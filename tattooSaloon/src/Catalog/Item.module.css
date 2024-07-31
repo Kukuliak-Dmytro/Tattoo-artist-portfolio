@@ -2,11 +2,11 @@
 .itemWrapper{
     height: 425px;
     background-color: #dddddd;
-    width:max-content;
-
+    /* width determined by grid-template-columns */
 }
 .imgWrapper{
-    width: min-content;
+    height: inherit;
+    width: inherit;
     box-sizing: border-box;
     border: 1px solid black;
     border-bottom: 4px solid black;
@@ -15,8 +15,8 @@
 
 }
 .imgWrapper img{
-    width: 20vw;
-    height: 249px;
+    width: 100%;
+    height: 100%;
     border: 1px solid black;
     object-fit: cover;
     transition-behavior: normal;
@@ -64,3 +64,4 @@
         padding-bottom: 10px;
     }
 }
+

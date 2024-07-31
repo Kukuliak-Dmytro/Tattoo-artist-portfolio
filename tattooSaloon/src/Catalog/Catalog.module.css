@@ -48,8 +48,7 @@
     padding-top: 50px ;
     background-color: beige;
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    justify-content: center;
+    justify-content: center ;
     gap: 50px 30px;
 }
 
@@ -74,4 +73,58 @@
     background-color: black;
     color: white;
     border-color: white;
+}
+
+@media (min-width:0px) {
+    .cardsWrapper{
+        grid-template-columns: repeat(1, calc(80vw/1));
+    }
+    .buttonsWrapper{
+        gap:15px;
+    }
+    .searchContainer {
+        width: 80%;
+     }
+    
+   
+}
+
+@media (min-width:576px) {
+    .cardsWrapper{
+        grid-template-columns: repeat(2, calc(80vw/2));
+    }
+    .buttonsWrapper{
+        gap:30px;
+    }
+    .searchContainer {
+        width: 70%;
+     }
+    
+   
+}
+@media (min-width:768px) {
+    .cardsWrapper{
+        grid-template-columns: repeat(3, calc(80vw/3));
+    }
+    .buttonsWrapper{
+        gap:45px;
+    }
+    .searchContainer {
+        width: 60%;
+     }
+    
+    
+}
+@media (min-width:992px) {
+    .cardsWrapper{
+        grid-template-columns: repeat(4, calc(80vw/4));
+    }
+    .buttonsWrapper{
+        gap:60px;
+    }
+    .searchContainer {
+        width: 50%;
+     }
+    
+   
 }

@@ -26,7 +26,7 @@ export default function Item({
    },[])
   return (
     <div className={styles.itemWrapper}>
-    <ReactPlaceholder  showLoadingAnimation={true}  type='rect' rows={0} delay={200}ready={loaded} style={{width:'20vw', height:'250px', marginBottom:"25px"}} color='#808080'>
+    <ReactPlaceholder  showLoadingAnimation={true}  type='rect' rows={0} delay={200}ready={loaded} style={{width:'290px', height:'250px', marginBottom:"25px"}} color='#808080'>
       <div className={styles.imgWrapper}>
         <img src={src} alt={title}  />
       </div>

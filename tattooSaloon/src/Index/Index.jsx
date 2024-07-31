@@ -64,7 +64,7 @@ export default function Index() {
                     </div>
                     <br />
                 </div>
-              <Link to="/catalog"> <button className={styles.btn}>More work </button> </Link>
+              <Link to="/catalog/1"> <button className={styles.btn}>More work </button> </Link>
 
             </div>
           
