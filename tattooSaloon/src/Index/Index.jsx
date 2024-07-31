@@ -28,7 +28,7 @@ export default function Index() {
         <>
             <Header />
             
-            <Container src="/Tattoo-artist-portfolio/assets/main@0,5x.png" height={1080} justify="center">
+            <Container src="https://cloudinary-marketing-res.cloudinary.com/images/w_1000,c_scale/v1679921049/Image_URL_header/Image_URL_header-png?_i=AA" height={1080} justify="center">
                 <h1 className={styles.heading}>Valentine</h1>
                 <p className={styles.paragraph}>Digital artist and tattoo designer</p>
             </Container>
