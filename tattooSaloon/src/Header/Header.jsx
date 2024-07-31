@@ -27,7 +27,7 @@ export default function Header() {
             <div className={styles.headerWrapper} style={{ height: `${toggled ? '240px' : '60px'}` }}>
                 <div className={styles.headerInner}>
                     <div className={styles.logoWrapper}>
-                        <Link to="/Tatto-artist-portfolio/"> <img src="public/v-alphabet-icon.svg" alt="The logo" /></Link>
+                        <Link to="/Tatto-artist-portfolio/"> <img src="./Tattoo-artist-portfolio/v-alphabet-icon.svg" alt="The logo" /></Link>
                         <button className={styles.navbarToggle} id="toggleButton" onClick={handleDropdownClick}><FiAlignRight /></button>
                     </div>
                     <div className={styles.linksWrapper}>

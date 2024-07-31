@@ -10,7 +10,7 @@ export default function Item({
   title = "Title",
   date = "Date",
   timeSpent = "Time spent",
-  src = "src/assets/1.jpg"
+  src = "/Tatto-artist-portfolio/assets/1.jpg"
   
 })
  {  
