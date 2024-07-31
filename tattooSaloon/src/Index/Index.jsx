@@ -43,29 +43,29 @@ export default function Index() {
                     <p>
                         Hello, I'm Valentine, a digital artist and tattoo designer. I live in Chernivtsi, Ukraine. I`ve been working with arts since I graduated college. <br />Welcome to my website, where I`d like to share some of my works. Enjoy!
                     </p>
-                    <Link to="/about"><button className={styles.btn}>Learn more</button></Link>
+                    <Link to="/Tatto-artist-portfolio/about"><button className={styles.btn}>Learn more</button></Link>
                 </div>
             </div>
             <div className={styles.outerSliderWrapper}>
                 <div className={styles.sliderWrapper}>
                     <h1 className={styles.myWorkHeading}>My work</h1>
                     <div className={styles.imagesContainer}>
-                        <Card src="\src\assets\1.jpg" link="/catalog/view/1" heading="Memento mori"/>
-                        <Card src="\src\assets\17.jpg" link="/catalog/view/17"heading="Glyphs"/>
-                        <Card src="\src\assets\3.jpg" link="/catalog/view/3"heading="Drall"/>
-                        <Card src="\src\assets\20.jpg" link="/catalog/view/20"heading="Locus"/>
-                        <Card src="\src\assets\5.jpg" link="/catalog/view/5"heading="Prince"/>
+                        <Card src="src/assets/1.jpg" link="/catalog/view/1" heading="Memento mori"/>
+                        <Card src="src/assets/17.jpg" link="/catalog/view/17"heading="Glyphs"/>
+                        <Card src="src/assets/3.jpg" link="/catalog/view/3"heading="Drall"/>
+                        <Card src="src/assets/20.jpg" link="/catalog/view/20"heading="Locus"/>
+                        <Card src="src/assets/5.jpg" link="/catalog/view/5"heading="Prince"/>
                     </div>
                     <div className={styles.imagesContainer}>
-                        <Card src="\src\assets\1.jpg" link="/catalog/view/1" heading="Memento mori"/>
-                        <Card src="\src\assets\17.jpg" link="/catalog/view/17"heading="Glyphs"/>
-                        <Card src="\src\assets\3.jpg" link="/catalog/view/3"heading="Drall"/>
-                        <Card src="\src\assets\20.jpg" link="/catalog/view/20"heading="Locus"/>
-                        <Card src="\src\assets\5.jpg" link="/catalog/view/5"heading="Prince"/>
+                        <Card src="src/assets/1.jpg" link="/catalog/view/1" heading="Memento mori"/>
+                        <Card src="src/assets/17.jpg" link="/catalog/view/17"heading="Glyphs"/>
+                        <Card src="src/assets/3.jpg" link="/catalog/view/3"heading="Drall"/>
+                        <Card src="src/assets/20.jpg" link="/catalog/view/20"heading="Locus"/>
+                        <Card src="src/assets/5.jpg" link="/catalog/view/5"heading="Prince"/>
                     </div>
                     <br />
                 </div>
-              <Link to="/catalog/1"> <button className={styles.btn}>More work </button> </Link>
+              <Link to="/Tatto-artist-portfolio/catalog/1"> <button className={styles.btn}>More work </button> </Link>
 
             </div>
           
@@ -76,7 +76,7 @@ export default function Index() {
                 <br />
 
                 <p>Or</p>
-                <Link to="/contact"><button className={styles.btn}>Fill the form</button></Link>
+                <Link to="/Tatto-artist-portfolio/contact"><button className={styles.btn}>Fill the form</button></Link>
             </div>
 
             <Footer />

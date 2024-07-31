@@ -6,7 +6,7 @@ export default function About() {
     return (
     <>
         <Header></Header>
-        <Container src='/src/assets/-2@0,33x.png' height={1080} justify="left">
+        <Container src='src/assets/-2@0,33x.png' height={1080} justify="left">
             <div className={styles.outerWrapper}>
                 <div className={styles.aboutContainer}>
                     <div className={styles.aboutImg}>

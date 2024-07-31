@@ -28,7 +28,7 @@ export default function Catalog() {
   return (
     <>
       <Header />
-      <Container src="/src/assets/cut@0,5x.png" height={250} justify="center">
+      <Container src="../src/assets/cut@0,5x.png" height={250} justify="center">
         <div className={styles.searchContainer}>
           <form action="search">
             <input type="text" className={styles.search} placeholder="Search" />
@@ -41,24 +41,24 @@ export default function Catalog() {
           {imagesArray[pageNo - 1].map((image, index) => (
             <Item
               key={index}
-              src={`/src/assets/${image}.jpg`}
+              src={`../src/assets/${image}.jpg`}
             />
           ))}
       
       </div>
       <div className={styles.buttonsWrapper}>
-        <Link to='/catalog/1'>
-          <button className={`${styles.pageBtn} ${pageNo == 1 ? styles.active : ''}`} onClick={() => window.location='/catalog/1'}>1</button>
+        <Link to='/Tatto-artist-portfolio/catalog/1'>
+          <button className={`${styles.pageBtn} ${pageNo == 1 ? styles.active : ''}`} onClick={() => window.location='/Tatto-artist-portfolio/catalog/1'}>1</button>
           {/* brute forcing urls, but I haven`t learned any back end yrt to make it look authentic, so maybe later */}
         </Link>
-        <Link to='/catalog/2'>
-          <button className={`${styles.pageBtn} ${pageNo == 2 ? styles.active : ''}`} onClick={() => window.location='/catalog/2'}>2</button>
+        <Link to='/Tatto-artist-portfolio/catalog/2'>
+          <button className={`${styles.pageBtn} ${pageNo == 2 ? styles.active : ''}`} onClick={() => window.location='/Tatto-artist-portfolio/catalog/2'}>2</button>
         </Link>
-        <Link to='/catalog/3'>
-          <button className={`${styles.pageBtn} ${pageNo == 3 ? styles.active : ''}`} onClick={() => window.location='/catalog/3'}>3</button>
+        <Link to='/Tatto-artist-portfolio/catalog/3'>
+          <button className={`${styles.pageBtn} ${pageNo == 3 ? styles.active : ''}`} onClick={() => window.location='/Tatto-artist-portfolio/catalog/3'}>3</button>
         </Link>
-        <Link to='/catalog/4'>
-          <button className={`${styles.pageBtn} ${pageNo == 4 ? styles.active : ''}`} onClick={() => window.location='/catalog/4'}>4</button>
+        <Link to='/Tatto-artist-portfolio/catalog/4'>
+          <button className={`${styles.pageBtn} ${pageNo == 4 ? styles.active : ''}`} onClick={() => window.location='/Tatto-artist-portfolio/catalog/4'}>4</button>
         </Link>
       </div>
       <Footer />
