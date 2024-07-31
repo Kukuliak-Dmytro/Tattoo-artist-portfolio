@@ -1,5 +1,5 @@
 import Card from './Card';
-import { useEffect, useRef, useState } from "react";
+import { useEffect} from "react";
 import {Outlet, Link } from 'react-router-dom';
 import Container from "../Container/Container";
 import Footer from "../Footer/Footer";
