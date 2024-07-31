@@ -1,6 +1,6 @@
 import Card from './Card';
 import { useEffect, useRef, useState } from "react";
-import { Link } from 'react-router-dom';
+import {Outlet, Link } from 'react-router-dom';
 import Container from "../Container/Container";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
@@ -39,6 +39,7 @@ export default function Index() {
                 </div>
                 <div className={styles.aboutDesc}>
                     <h1>Greetings!</h1>
+                    <Outlet/>
                     <p>
                         Hello, I'm Valentine, a digital artist and tattoo designer. I live in Chernivtsi, Ukraine. I`ve been working with arts since I graduated college. <br />Welcome to my website, where I`d like to share some of my works. Enjoy!
                     </p>
