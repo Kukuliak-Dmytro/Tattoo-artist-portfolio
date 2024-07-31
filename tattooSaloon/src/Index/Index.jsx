@@ -1,6 +1,7 @@
 import Card from './Card';
 import { useEffect} from "react";
 import {Outlet, Link } from 'react-router-dom';
+import back from "./assets/main@0,5x.png";
 import Container from "../Container/Container";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
@@ -27,7 +28,7 @@ export default function Index() {
     return (
         <>
             <Header />
-            <Container src='src/assets/main@0,5x.png' height={1080} justify="center">
+            <Container src={back} height={1080} justify="center">
                 <h1 className={styles.heading}>Valentine</h1>
                 <p className={styles.paragraph}>Digital artist and tattoo designer</p>
             </Container>
