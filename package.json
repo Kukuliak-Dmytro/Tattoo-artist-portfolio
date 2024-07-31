@@ -1,6 +1,10 @@
 {
+  "homepage": "https://kukuliak-dmytro.github.io/Tatto-artist-portfolio/",
   "dependencies": {
     "react-icons": "^5.2.1",
     "react-placeholder": "^4.1.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }
