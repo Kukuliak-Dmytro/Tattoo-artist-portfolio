@@ -27,26 +27,26 @@ export default function Header() {
             <div className={styles.headerWrapper} style={{ height: `${toggled ? '240px' : '60px'}` }}>
                 <div className={styles.headerInner}>
                     <div className={styles.logoWrapper}>
-                        <Link to="/"> <img src="/v-alphabet-icon.svg" alt="The logo" /></Link>
+                        <Link to="/Tatto-artist-portfolio/"> <img src="/v-alphabet-icon.svg" alt="The logo" /></Link>
                         <button className={styles.navbarToggle} id="toggleButton" onClick={handleDropdownClick}><FiAlignRight /></button>
                     </div>
                     <div className={styles.linksWrapper}>
                         <Link
-                            to="/about"
+                            to="/Tatto-artist-portfolio/about"
                             className={`${styles.links} ${toggled ? styles.toggled1 : ''}`}
                             style={{ pointerEvents: `${toggled || isWide ? 'all' : 'none'}` }}
                         >
                             About us
                         </Link>
                         <Link
-                            to="/catalog/1"
+                            to="/Tatto-artist-portfolio/catalog/1"
                             className={`${styles.links} ${toggled ? styles.toggled2 : ''}`}
                             style={{ fontWeight: "700", pointerEvents: `${toggled || isWide ? 'all' : 'none'}` }}
                         >
                             Catalog
                         </Link>
                         <Link
-                            to="/contact"
+                            to="/Tatto-artist-portfolio/contact"
                             className={`${styles.links} ${toggled ? styles.toggled3 : ''}`}
                             style={{ pointerEvents: `${toggled || isWide ? 'all' : 'none'}` }}
                         >

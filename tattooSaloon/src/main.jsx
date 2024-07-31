@@ -8,24 +8,24 @@ import './main.css'
 import {createBrowserRouter,  RouterProvider,} from "react-router-dom";
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/Tatto-artist-portfolio/",
     element: <Index/>,
   },
   {
-    path: "/about",
+    path: "/Tatto-artist-portfolio/about",
     element: <About/>,
   },
   {
-    path: "/catalog/:pageNo",
+    path: "/Tatto-artist-portfolio/catalog/:pageNo",
     element: <Catalog/>,
   },
   {
-    path: "/catalog/view/:picNo",
+    path: "/Tatto-artist-portfolio/catalog/view/:picNo",
     // A dynamic page is required here
     element: <Catalog/>,
   },
   {
-    path: "/contact",
+    path: "/Tatto-artist-portfolio/contact",
     element: <Contact/>,
   },
   {
