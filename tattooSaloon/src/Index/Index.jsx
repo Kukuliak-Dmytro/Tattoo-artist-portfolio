@@ -1,7 +1,7 @@
 import Card from './Card';
 import { useEffect} from "react";
 import {Outlet, Link } from 'react-router-dom';
-import back from "./assets/main@0,5x.png";
+import back from "../assets/main@0,5x.png";
 import Container from "../Container/Container";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
