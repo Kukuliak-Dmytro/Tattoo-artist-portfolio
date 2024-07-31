@@ -28,7 +28,7 @@ export default function Catalog() {
   return (
     <>
       <Header />
-      <Container src="/Tatto-artist-portfolio/assets/cut@0,5x.png" height={250} justify="center">
+      <Container src="../src/assets/cut@0,5x.png" height={250} justify="center">
         <div className={styles.searchContainer}>
           <form action="search">
             <input type="text" className={styles.search} placeholder="Search" />
@@ -41,7 +41,7 @@ export default function Catalog() {
           {imagesArray[pageNo - 1].map((image, index) => (
             <Item
               key={index}
-              src={`/Tatto-artist-portfolio/assets/${image}.jpg`}
+              src={`../src/assets/${image}.jpg`}
             />
           ))}
       
