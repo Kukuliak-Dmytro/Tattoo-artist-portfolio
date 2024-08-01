@@ -6,12 +6,12 @@ import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import styles from './Index.module.css';
 
-import selfir from '../assets/selfir.jpg';
-import img1 from '../assets/1.jpg';
-import img17 from '../assets/40.jpg';
-import img3 from '../assets/3.jpg';
-import img20 from '../assets/30.jpg';
-import img5 from '../assets/5.jpg';
+import selfie from '../assets/selfir.jpg';
+import imgI from '../assets/1.jpg';
+import imgII from '../assets/17.jpg';
+import imgIII from '../assets/3.jpg';
+import imgIV from '../assets/30.jpg';
+import imgV from '../assets/20.jpg';
 import mainImage from '../assets/main@0,5x.png';
 
 export default function Index() {
@@ -52,18 +52,18 @@ export default function Index() {
                 <div className={styles.sliderWrapper}>
                     <h1 className={styles.myWorkHeading}>My work</h1>
                     <div className={styles.imagesContainer}>
-                        <Card src={img1} link="/catalog/view/1" heading="Memento mori" />
-                        <Card src={img17} link="/catalog/view/17" heading="Glyphs" />
-                        <Card src={img3} link="/catalog/view/3" heading="Drall" />
-                        <Card src={img20} link="/catalog/view/20" heading="Locus" />
-                        <Card src={img5} link="/catalog/view/5" heading="Prince" />
+                        <Card src={imgI} link="/catalog/view/1" heading="Memento mori" />
+                        <Card src={imgII} link="/catalog/view/17" heading="Glyphs" />
+                        <Card src={imgIII} link="/catalog/view/3" heading="Drall" />
+                        <Card src={imgIV} link="/catalog/view/20" heading="Locus" />
+                        <Card src={imgV} link="/catalog/view/5" heading="Prince" />
                     </div>
                     <div className={styles.imagesContainer}>
-                        <Card src={img1} link="/catalog/view/1" heading="Memento mori" />
-                        <Card src={img17} link="/catalog/view/17" heading="Glyphs" />
-                        <Card src={img3} link="/catalog/view/3" heading="Drall" />
-                        <Card src={img20} link="/catalog/view/20" heading="Locus" />
-                        <Card src={img5} link="/catalog/view/5" heading="Prince" />
+                        <Card src={imgI} link="/catalog/view/1" heading="Memento mori" />
+                        <Card src={imgII} link="/catalog/view/17" heading="Glyphs" />
+                        <Card src={imgIII} link="/catalog/view/3" heading="Drall" />
+                        <Card src={imgIV} link="/catalog/view/20" heading="Locus" />
+                        <Card src={imgV} link="/catalog/view/5" heading="Prince" />
                     </div>
                     <br />
                 </div>
