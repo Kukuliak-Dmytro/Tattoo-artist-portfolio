@@ -42,7 +42,7 @@ export default function Catalog() {
           {imagesArray[pageNo - 1].map((image, index) => (
             <Item
               key={index}
-              src={`../src/assets/${image}.jpg`}
+              src={`../assets/${image}.jpg`}
             />
           ))}
       
