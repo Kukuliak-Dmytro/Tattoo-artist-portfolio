@@ -6,7 +6,7 @@ import { MdEmail } from "react-icons/md";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-import imgContact from '.../assets/search.png';
+import imgContact from '../assets/search.png';
 
 
     
