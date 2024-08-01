@@ -2,15 +2,20 @@ import Header from "../Header/Header";
 import Container from "../Container/Container";
 import Footer from "../Footer/Footer";
 import styles from './About.module.css'
+import imgAbout from '../assets/-2@0,33x.png';
+import artistPhoto from '../assetsphoto_2023-10-09_15-04-34.jpg';
+
+
+
 export default function About() {
     return (
     <>
         <Header></Header>
-        <Container src='src/assets/-2@0,33x.png' height={1080} justify="left">
+        <Container src={imgAbout} height={1080} justify="left">
             <div className={styles.outerWrapper}>
                 <div className={styles.aboutContainer}>
                     <div className={styles.aboutImg}>
-                        <img src='src/assets/photo_2023-10-09_15-04-34.jpg' alt="The photo of the artist"/>
+                        <img src={artistPhoto} alt="The photo of the artist"/>
                     </div>
                     <div className={styles.aboutDesc}>
                         <h1>Greetings!</h1>
