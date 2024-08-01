@@ -9,11 +9,19 @@ import { useParams, Link } from "react-router-dom";
 
 import imgCut from '../assets/cut@0,5x.png';
 
+import img1 from '../assets/1.jpg';
+import img2 from '../assets/2.jpg';
+import img3 from '../assets/3.jpg';
+import img4 from '../assets/4.jpg';
+
+
+
+
 
 export default function Catalog() {
   const { pageNo } = useParams();
   const imagesArray = [
-    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    [img1, img2, img3, img4, 5, 6, 7, 8, 9, 10, 11, 12],
     [13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24],
     [25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36],
     [37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48]
@@ -42,7 +50,7 @@ export default function Catalog() {
           {imagesArray[pageNo - 1].map((image, index) => (
             <Item
               key={index}
-              src={`../assets/${image}.jpg`}
+              src={image}
             />
           ))}
       
