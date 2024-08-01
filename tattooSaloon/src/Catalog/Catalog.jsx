@@ -9,6 +9,15 @@ import { useParams, Link } from "react-router-dom";
 
 import imgCut from '../assets/cut@0,5x.png';
 
+// src/utils/importImages.js
+
+ const importAllImages = () => {
+  let images = {};
+  for (let i = 1; i <= 48; i++) {
+      images[i] = require(`../assets/${i}.jpg`);
+  }
+  return images;
+};
 
 export default function Catalog() {
   const { pageNo } = useParams();
@@ -20,49 +29,47 @@ export default function Catalog() {
   ];
 
   const [loading, setLoading] = React.useState(true);
+  const images = importAllImages();
 
   useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 1000);
-    return () => clearTimeout(timer);
+      const timer = setTimeout(() => setLoading(false), 1000);
+      return () => clearTimeout(timer);
   }, [pageNo]);
 
   return (
-    <>
-      <Header />
-      <Container src={imgCut} height={250} justify="center">
-        <div className={styles.searchContainer}>
-          <form action="search">
-            <input type="text" className={styles.search} placeholder="Search" />
-          </form>
-          <button className={styles.searchBtn}><BiSearch /></button>
-        </div>
-      </Container>
-      <div className={styles.cardsWrapper}>
-       
-          {imagesArray[pageNo - 1].map((image, index) => (
-            <Item
-              key={index}
-              src={`../assets/${image}.jpg`}
-            />
-          ))}
-      
-      </div>
-      <div className={styles.buttonsWrapper}>
-        <Link to='/Tatto-artist-portfolio/catalog/1'>
-          <button className={`${styles.pageBtn} ${pageNo == 1 ? styles.active : ''}`} onClick={() => window.location='/Tatto-artist-portfolio/catalog/1'}>1</button>
-          {/* brute forcing urls, but I haven`t learned any back end yrt to make it look authentic, so maybe later */}
-        </Link>
-        <Link to='/Tatto-artist-portfolio/catalog/2'>
-          <button className={`${styles.pageBtn} ${pageNo == 2 ? styles.active : ''}`} onClick={() => window.location='/Tatto-artist-portfolio/catalog/2'}>2</button>
-        </Link>
-        <Link to='/Tatto-artist-portfolio/catalog/3'>
-          <button className={`${styles.pageBtn} ${pageNo == 3 ? styles.active : ''}`} onClick={() => window.location='/Tatto-artist-portfolio/catalog/3'}>3</button>
-        </Link>
-        <Link to='/Tatto-artist-portfolio/catalog/4'>
-          <button className={`${styles.pageBtn} ${pageNo == 4 ? styles.active : ''}`} onClick={() => window.location='/Tatto-artist-portfolio/catalog/4'}>4</button>
-        </Link>
-      </div>
-      <Footer />
-    </>
+      <>
+          <Header />
+          <Container src={imgCut} height={250} justify="center">
+              <div className={styles.searchContainer}>
+                  <form action="search">
+                      <input type="text" className={styles.search} placeholder="Search" />
+                  </form>
+                  <button className={styles.searchBtn}><BiSearch /></button>
+              </div>
+          </Container>
+          <div className={styles.cardsWrapper}>
+              {imagesArray[pageNo - 1].map((image, index) => (
+                  <Item
+                      key={index}
+                      src={images[image].default}
+                  />
+              ))}
+          </div>
+          <div className={styles.buttonsWrapper}>
+              <Link to='/Tattoo-artist-portfolio/catalog/1'>
+                  <button className={`${styles.pageBtn} ${pageNo == 1 ? styles.active : ''}`} onClick={() => window.location='/Tattoo-artist-portfolio/catalog/1'}>1</button>
+              </Link>
+              <Link to='/Tattoo-artist-portfolio/catalog/2'>
+                  <button className={`${styles.pageBtn} ${pageNo == 2 ? styles.active : ''}`} onClick={() => window.location='/Tattoo-artist-portfolio/catalog/2'}>2</button>
+              </Link>
+              <Link to='/Tattoo-artist-portfolio/catalog/3'>
+                  <button className={`${styles.pageBtn} ${pageNo == 3 ? styles.active : ''}`} onClick={() => window.location='/Tattoo-artist-portfolio/catalog/3'}>3</button>
+              </Link>
+              <Link to='/Tattoo-artist-portfolio/catalog/4'>
+                  <button className={`${styles.pageBtn} ${pageNo == 4 ? styles.active : ''}`} onClick={() => window.location='/Tattoo-artist-portfolio/catalog/4'}>4</button>
+              </Link>
+          </div>
+          <Footer />
+      </>
   );
 }
