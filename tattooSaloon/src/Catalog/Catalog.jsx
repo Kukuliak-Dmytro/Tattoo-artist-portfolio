@@ -7,6 +7,8 @@ import Item from "./Item";
 import { BiSearch } from "react-icons/bi";
 import { useParams, Link } from "react-router-dom";
 
+import imgCatalog from '../assets/cut@0,5x.png';
+
 
 export default function Catalog() {
   const { pageNo } = useParams();
@@ -27,7 +29,7 @@ export default function Catalog() {
   return (
     <>
       <Header />
-      <Container src="../src/assets/cut@0,5x.png" height={250} justify="center">
+      <Container src={imgCatalog} height={250} justify="center">
         <div className={styles.searchContainer}>
           <form action="search">
             <input type="text" className={styles.search} placeholder="Search" />
