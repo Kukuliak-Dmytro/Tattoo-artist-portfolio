@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import styles from './Index.module.css';
 
 const Card = (props) => (
-    <Link to={props.link}>
+  
     <div className={styles.cardContainer}>
         
         <div className={styles.outerWrapper}>
@@ -15,7 +15,7 @@ const Card = (props) => (
         <img src={props.src} alt="error" />
 
     </div>
-    </Link>
+    
        
 );
 

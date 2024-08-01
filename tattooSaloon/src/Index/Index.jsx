@@ -52,18 +52,18 @@ export default function Index() {
                 <div className={styles.sliderWrapper}>
                     <h1 className={styles.myWorkHeading}>My work</h1>
                     <div className={styles.imagesContainer}>
-                        <Card src={imgI} link="/catalog/view/1" heading="Memento mori" />
-                        <Card src={imgII} link="/catalog/view/17" heading="Glyphs" />
-                        <Card src={imgIII} link="/catalog/view/3" heading="Drall" />
-                        <Card src={imgIV} link="/catalog/view/20" heading="Locus" />
-                        <Card src={imgV} link="/catalog/view/5" heading="Prince" />
+                        <Card src={imgI} heading="Memento mori" />
+                        <Card src={imgII} heading="Glyphs" />
+                        <Card src={imgIII} heading="Drall" />
+                        <Card src={imgIV} heading="Locus" />
+                        <Card src={imgV} heading="Prince" />
                     </div>
                     <div className={styles.imagesContainer}>
-                        <Card src={imgI} link="/catalog/view/1" heading="Memento mori" />
-                        <Card src={imgII} link="/catalog/view/17" heading="Glyphs" />
-                        <Card src={imgIII} link="/catalog/view/3" heading="Drall" />
-                        <Card src={imgIV} link="/catalog/view/20" heading="Locus" />
-                        <Card src={imgV} link="/catalog/view/5" heading="Prince" />
+                        <Card src={imgI} heading="Memento mori" />
+                        <Card src={imgII} heading="Glyphs" />
+                        <Card src={imgIII} heading="Drall" />
+                        <Card src={imgIV} heading="Locus" />
+                        <Card src={imgV} heading="Prince" />
                     </div>
                     <br />
                 </div>
