@@ -9,28 +9,28 @@ import './main.css'
 import { createBrowserRouter, RouterProvider, } from "react-router-dom";
 const router = createBrowserRouter([
   {
-    path: "/Tatto-artist-portfolio/",
+    path: "/Tattoo-artist-portfolio/",
     element: <App />,
     children: [
       {
-        path: "/Tatto-artist-portfolio/",
+        path: "/Tattoo-artist-portfolio/",
         element: <Index />,
       },
       {
-        path: "/Tatto-artist-portfolio/about",
+        path: "/Tattoo-artist-portfolio/about",
         element: <About />,
       },
       {
-        path: "/Tatto-artist-portfolio/catalog/:pageNo",
+        path: "/Tattoo-artist-portfolio/catalog/:pageNo",
         element: <Catalog />,
       },
       {
-        path: "/Tatto-artist-portfolio/catalog/view/:picNo",
+        path: "/Tattoo-artist-portfolio/catalog/view/:picNo",
         // A dynamic page is required here
         element: <Catalog />,
       },
       {
-        path: "/Tatto-artist-portfolio/contact",
+        path: "/Tattoo-artist-portfolio/contact",
         element: <Contact />,
       },
       {

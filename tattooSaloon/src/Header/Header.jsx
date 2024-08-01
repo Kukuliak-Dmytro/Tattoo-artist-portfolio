@@ -29,26 +29,26 @@ export default function Header() {
             <div className={styles.headerWrapper} style={{ height: `${toggled ? '240px' : '60px'}` }}>
                 <div className={styles.headerInner}>
                     <div className={styles.logoWrapper}>
-                        <Link to="/Tatto-artist-portfolio/"> <img src={vIcon} alt="The logo" /></Link>
+                        <Link to="/Tattoo-artist-portfolio/"> <img src={vIcon} alt="The logo" /></Link>
                         <button className={styles.navbarToggle} id="toggleButton" onClick={handleDropdownClick}><FiAlignRight /></button>
                     </div>
                     <div className={styles.linksWrapper}>
                         <Link
-                            to="/Tatto-artist-portfolio/about"
+                            to="/Tattoo-artist-portfolio/about"
                             className={`${styles.links} ${toggled ? styles.toggled1 : ''}`}
                             style={{ pointerEvents: `${toggled || isWide ? 'all' : 'none'}` }}
                         >
                             About us
                         </Link>
                         <Link
-                            to="/Tatto-artist-portfolio/catalog/1"
+                            to="/Tattoo-artist-portfolio/catalog/1"
                             className={`${styles.links} ${toggled ? styles.toggled2 : ''}`}
                             style={{ fontWeight: "700", pointerEvents: `${toggled || isWide ? 'all' : 'none'}` }}
                         >
                             Catalog
                         </Link>
                         <Link
-                            to="/Tatto-artist-portfolio/contact"
+                            to="/Tattoo-artist-portfolio/contact"
                             className={`${styles.links} ${toggled ? styles.toggled3 : ''}`}
                             style={{ pointerEvents: `${toggled || isWide ? 'all' : 'none'}` }}
                         >
