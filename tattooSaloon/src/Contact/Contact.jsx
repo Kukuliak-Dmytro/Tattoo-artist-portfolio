@@ -6,6 +6,9 @@ import { MdEmail } from "react-icons/md";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
+import imgCnt from '../assets/search.png';
+
+
     
 export default function Contact(){
     const [alertText, setAlertText] = useState('Copy email?');
@@ -23,7 +26,7 @@ export default function Contact(){
       return(
         <>      
         <Header/>
-        <Container src='src/assets/search.png' height={1080}>
+        <Container src={imgCnt} height={1080}>
         <div className={styles.contactWrapper}>
             <div className={styles.headerWrapper}>
                 <div className={styles.leftPart}>

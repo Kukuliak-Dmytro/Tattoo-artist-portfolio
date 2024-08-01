@@ -8,9 +8,9 @@ import styles from './Index.module.css';
 
 import selfir from '../assets/selfir.jpg';
 import img1 from '../assets/1.jpg';
-import img17 from '../assets/17.jpg';
+import img17 from '../assets/2.jpg';
 import img3 from '../assets/3.jpg';
-import img20 from '../assets/20.jpg';
+import img20 from '../assets/4.jpg';
 import img5 from '../assets/5.jpg';
 import mainImage from '../assets/main@0,5x.png';
 
