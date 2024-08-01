@@ -28,14 +28,14 @@ export default function Index() {
         <>
             <Header />
             
-            <Container src="/Tattoo-artist-portfolio/assets/images/main@0,5x.png" height={1080} justify="center">
+            <Container src="/Tattoo-artist-portfolio/public/images/main@0,5x.png" height={1080} justify="center">
                 <h1 className={styles.heading}>Valentine</h1>
                 <p className={styles.paragraph}>Digital artist and tattoo designer</p>
             </Container>
             <div className={styles.aboutPageWrapper}>
                 <div className={styles.aboutImg}>
                     <div className={styles.imgBorder}>
-                        <img src='/assets/selfir.jpg' alt="The photo of the artist" />
+                        <img src='src/assets/selfir.jpg' alt="The photo of the artist" />
                     </div>
                 </div>
                 <div className={styles.aboutDesc}>
@@ -51,9 +51,9 @@ export default function Index() {
                 <div className={styles.sliderWrapper}>
                     <h1 className={styles.myWorkHeading}>My work</h1>
                     <div className={styles.imagesContainer}>
-                        <Card src="./assets/1.jpg" link="/catalog/view/1" heading="Memento mori"/>
-                        <Card src="./Tattoo-artist-portfolio//17.jpg" link="/catalog/view/17"heading="Glyphs"/>
-                        <Card src="/Tattoo-artist-portfolio/assets/3.jpg" link="/catalog/view/3"heading="Drall"/>
+                        <Card src="src/assets/1.jpg" link="/catalog/view/1" heading="Memento mori"/>
+                        <Card src="src/assets/17.jpg" link="/catalog/view/17"heading="Glyphs"/>
+                        <Card src="src/assets/3.jpg" link="/catalog/view/3"heading="Drall"/>
                         <Card src="src/assets/20.jpg" link="/catalog/view/20"heading="Locus"/>
                         <Card src="src/assets/5.jpg" link="/catalog/view/5"heading="Prince"/>
                     </div>
