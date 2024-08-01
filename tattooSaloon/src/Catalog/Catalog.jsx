@@ -6,8 +6,7 @@ import styles from "./Catalog.module.css";
 import Item from "./Item";
 import { BiSearch } from "react-icons/bi";
 import { useParams, Link } from "react-router-dom";
-import Placeholder from 'react-placeholder';
-import 'react-placeholder/lib/reactPlaceholder.css';
+
 
 export default function Catalog() {
   const { pageNo } = useParams();

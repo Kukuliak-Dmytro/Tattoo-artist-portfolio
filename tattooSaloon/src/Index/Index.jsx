@@ -10,8 +10,8 @@ import selfie from '../assets/selfir.jpg';
 import imgI from '../assets/1.jpg';
 import imgII from '../assets/17.jpg';
 import imgIII from '../assets/3.jpg';
-import imgIV from '../assets/30.jpg';
-import imgV from '../assets/20.jpg';
+import imgIV from '../assets/20.jpg';
+import imgV from '../assets/5.jpg';
 import mainImage from '../assets/main@0,5x.png';
 
 export default function Index() {
@@ -36,7 +36,7 @@ export default function Index() {
             <div className={styles.aboutPageWrapper}>
                 <div className={styles.aboutImg}>
                     <div className={styles.imgBorder}>
-                        <img src={selfir} alt="The photo of the artist" />
+                        <img src={selfie} alt="The photo of the artist" />
                     </div>
                 </div>
                 <div className={styles.aboutDesc}>

@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { FiAlignRight } from 'react-icons/fi';
 import styles from './Header.module.css';
 
+import vIcon from '../assets/v-alphabet-icon.svg';
+
 export default function Header() {
     const [toggled, setToggled] = useState(false);
     const [isWide, setIsWide] = useState(window.innerWidth >= 768);
@@ -27,7 +29,7 @@ export default function Header() {
             <div className={styles.headerWrapper} style={{ height: `${toggled ? '240px' : '60px'}` }}>
                 <div className={styles.headerInner}>
                     <div className={styles.logoWrapper}>
-                        <Link to="/Tatto-artist-portfolio/"> <img src="https://i.imgur.com/XR7sUNN.png" alt="The logo" /></Link>
+                        <Link to="/Tatto-artist-portfolio/"> <img src={vIcon} alt="The logo" /></Link>
                         <button className={styles.navbarToggle} id="toggleButton" onClick={handleDropdownClick}><FiAlignRight /></button>
                     </div>
                     <div className={styles.linksWrapper}>
