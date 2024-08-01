@@ -2,8 +2,8 @@ import Header from "../Header/Header";
 import Container from "../Container/Container";
 import Footer from "../Footer/Footer";
 import styles from './About.module.css'
-import imgAbout from '../assets/-2@0,33x.png';
-import artistPhoto from '../assets/photo_2023-10-09_15-04-34.jpg';
+import imgAbout from '.../assets/-2@0,33x.png';
+import artistPhoto from '.../assets/photo_2023-10-09_15-04-34.jpg';
 
 
 
