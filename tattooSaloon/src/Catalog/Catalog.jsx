@@ -3,6 +3,7 @@ import Header from "../Header/Header";
 import Container from "../Container/Container";
 import Footer from "../Footer/Footer";
 import styles from "./Catalog.module.css";
+import Modalstyles from "./modal.module.css";
 import Item from "./Item";
 import { BiSearch } from "react-icons/bi";
 import { useParams, Link } from "react-router-dom";
@@ -97,8 +98,10 @@ export default function Catalog() {
           ))}
       
       </div>
-      <div className={styles.buttonsWrapper}>
-   
+      
+    
+
+      <div className={styles.buttonsWrapper}>   
           <button className={`${styles.pageBtn} ${pageNo == 1 ? styles.active : ''}`} onClick={() => window.location='/Tattoo-artist-portfolio/catalog/1'}>1</button>
           {/* brute forcing urls, but I haven`t learned any back end yrt to make it look authentic, so maybe later */}
           <button className={`${styles.pageBtn} ${pageNo == 2 ? styles.active : ''}`} onClick={() => window.location='/Tattoo-artist-portfolio/catalog/2'}>2</button>
@@ -107,6 +110,12 @@ export default function Catalog() {
       
       </div>
       <Footer />
+      <div className={Modalstyles.modal} >
+        <div className={Modalstyles.closeBtn}>&#10006;</div>
+            <img src={img4} alt="Image Preview"/>
+      
+    </div>
+    <div className={Modalstyles.overlay}></div>
     </>
   );
 }
