@@ -60,7 +60,13 @@ import img48 from '../assets/48.jpg';
 
 
 
+const closeModal = () => {
+  const modalBody = document.querySelector(`.${Modalstyles.modal}`);
+  const overlay = document.querySelector(`.${Modalstyles.overlay}`);
+  overlay.classList.remove(`${Modalstyles.overlayActive}`)
+  modalBody.classList.remove(`${Modalstyles.modalActive}`)
 
+}
 export default function Catalog() {
   const { pageNo } = useParams();
   const imagesArray = [
@@ -69,13 +75,6 @@ export default function Catalog() {
     [img25, img26, img27, img28, img29, img30, img31, img32, img33, img34, img35, img36],
     [img37, img38, img39, img40, img41, img42, img43, img44, img45, img46, img47, img48]
   ];
-
-  const [loading, setLoading] = React.useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 1000);
-    return () => clearTimeout(timer);
-  }, [pageNo]);
 
   return (
     <>
@@ -89,33 +88,33 @@ export default function Catalog() {
         </div>
       </Container>
       <div className={styles.cardsWrapper}>
-       
-          {imagesArray[pageNo - 1].map((image, index) => (
-            <Item
-              key={index}
-              src={image}
-            />
-          ))}
-      
-      </div>
-      
-    
 
-      <div className={styles.buttonsWrapper}>   
-          <button className={`${styles.pageBtn} ${pageNo == 1 ? styles.active : ''}`} onClick={() => window.location='/Tattoo-artist-portfolio/catalog/1'}>1</button>
-          {/* brute forcing urls, but I haven`t learned any back end yrt to make it look authentic, so maybe later */}
-          <button className={`${styles.pageBtn} ${pageNo == 2 ? styles.active : ''}`} onClick={() => window.location='/Tattoo-artist-portfolio/catalog/2'}>2</button>
-          <button className={`${styles.pageBtn} ${pageNo == 3 ? styles.active : ''}`} onClick={() => window.location='/Tattoo-artist-portfolio/catalog/3'}>3</button>
-          <button className={`${styles.pageBtn} ${pageNo == 4 ? styles.active : ''}`} onClick={() => window.location='/Tattoo-artist-portfolio/catalog/4'}>4</button>
-      
+        {imagesArray[pageNo - 1].map((image, index) => (
+          <Item
+            key={index}
+            src={image}
+          />
+        ))}
+
+      </div>
+
+
+
+      <div className={styles.buttonsWrapper}>
+        <button className={`${styles.pageBtn} ${pageNo == 1 ? styles.active : ''}`} onClick={() => window.location = '/Tattoo-artist-portfolio/catalog/1'}>1</button>
+        {/* brute forcing urls, but I haven`t learned any back end yrt to make it look authentic, so maybe later */}
+        <button className={`${styles.pageBtn} ${pageNo == 2 ? styles.active : ''}`} onClick={() => window.location = '/Tattoo-artist-portfolio/catalog/2'}>2</button>
+        <button className={`${styles.pageBtn} ${pageNo == 3 ? styles.active : ''}`} onClick={() => window.location = '/Tattoo-artist-portfolio/catalog/3'}>3</button>
+        <button className={`${styles.pageBtn} ${pageNo == 4 ? styles.active : ''}`} onClick={() => window.location = '/Tattoo-artist-portfolio/catalog/4'}>4</button>
+
       </div>
       <Footer />
       <div className={Modalstyles.modal} >
-        <div className={Modalstyles.closeBtn}>&#10006;</div>
-            <img src={img4} alt="Image Preview"/>
-      
-    </div>
-    <div className={Modalstyles.overlay}></div>
+        <div className={Modalstyles.closeBtn} onClick={closeModal}>&#10006;</div>
+        <img src={img4} alt="Image Preview" />
+
+      </div>
+      <div className={Modalstyles.overlay} onClick={closeModal}></div>
     </>
   );
 }

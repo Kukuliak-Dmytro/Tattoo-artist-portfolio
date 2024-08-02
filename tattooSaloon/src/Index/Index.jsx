@@ -5,7 +5,7 @@ import Container from "../Container/Container";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import styles from './Index.module.css';
-
+import Modalstyles from "../Catalog/modal.module.css";
 import selfie from '../assets/selfir.jpg';
 import imgI from '../assets/1.jpg';
 import imgII from '../assets/17.jpg';
@@ -13,6 +13,13 @@ import imgIII from '../assets/3.jpg';
 import imgIV from '../assets/20.jpg';
 import imgV from '../assets/5.jpg';
 import mainImage from '../assets/main@0,5x.png';
+const closeModal = () => {
+    const modalBody = document.querySelector(`.${Modalstyles.modal}`);
+    const overlay = document.querySelector(`.${Modalstyles.overlay}`);
+    overlay.classList.remove(`${Modalstyles.overlayActive}`)
+    modalBody.classList.remove(`${Modalstyles.modalActive}`)
+
+}
 
 export default function Index() {
     useEffect(() => {
@@ -78,6 +85,13 @@ export default function Index() {
                 <Link to="/Tattoo-artist-portfolio/contact"><button className={styles.btn}>Fill the form</button></Link>
             </div>
             <Footer />
+
+            <div className={Modalstyles.modal} >
+                <div className={Modalstyles.closeBtn} onClick={closeModal}>&#10006;</div>
+                <img src={imgI} alt="Image Preview" />
+
+            </div>
+            <div className={Modalstyles.overlay} onClick={closeModal}></div>
         </>
     );
 }

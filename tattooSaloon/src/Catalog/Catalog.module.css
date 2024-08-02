@@ -68,6 +68,13 @@
     width: 40px;
     height: 40px;
     cursor: pointer;
+    transition: 0.2s;
+    &:hover{
+        scale: 1.05;
+    }
+    &:active{
+        scale:0.95
+    }
 }
 .pageBtn.active{
     background-color: black;
