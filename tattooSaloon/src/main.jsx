@@ -25,11 +25,6 @@ const router = createBrowserRouter([
         element: <Catalog />,
       },
       {
-        path: "/Tattoo-artist-portfolio/catalog/view/:picNo",
-        // A dynamic page is required here
-        element: <Catalog />,
-      },
-      {
         path: "/Tattoo-artist-portfolio/contact",
         element: <Contact />,
       },

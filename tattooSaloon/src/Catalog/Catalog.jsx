@@ -98,19 +98,13 @@ export default function Catalog() {
       
       </div>
       <div className={styles.buttonsWrapper}>
-        <Link to='/Tatto-artist-portfolio/catalog/1'>
-          <button className={`${styles.pageBtn} ${pageNo == 1 ? styles.active : ''}`} onClick={ ()=>{window.scrollTo(0, 0)}}>1</button>
+   
+          <button className={`${styles.pageBtn} ${pageNo == 1 ? styles.active : ''}`} onClick={() => window.location='/Tattoo-artist-portfolio/catalog/1'}>1</button>
           {/* brute forcing urls, but I haven`t learned any back end yrt to make it look authentic, so maybe later */}
-        </Link>
-        <Link to='/Tatto-artist-portfolio/catalog/2'>
-          <button className={`${styles.pageBtn} ${pageNo == 2 ? styles.active : ''}`} onClick={ ()=>{window.scrollTo(0, 0)}}>2</button>
-        </Link>
-        <Link to='/Tatto-artist-portfolio/catalog/3'>
-          <button className={`${styles.pageBtn} ${pageNo == 3 ? styles.active : ''}`} onClick={ ()=>{window.scrollTo(0, 0)}}>3</button>
-        </Link>
-        <Link to='/Tatto-artist-portfolio/catalog/4'>
-          <button className={`${styles.pageBtn} ${pageNo == 4 ? styles.active : ''}`} onClick={ ()=>{window.scrollTo(0, 0)}}>4</button>
-        </Link>
+          <button className={`${styles.pageBtn} ${pageNo == 2 ? styles.active : ''}`} onClick={() => window.location='/Tattoo-artist-portfolio/catalog/2'}>2</button>
+          <button className={`${styles.pageBtn} ${pageNo == 3 ? styles.active : ''}`} onClick={() => window.location='/Tattoo-artist-portfolio/catalog/3'}>3</button>
+          <button className={`${styles.pageBtn} ${pageNo == 4 ? styles.active : ''}`} onClick={() => window.location='/Tattoo-artist-portfolio/catalog/4'}>4</button>
+      
       </div>
       <Footer />
     </>
