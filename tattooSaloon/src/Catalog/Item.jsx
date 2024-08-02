@@ -20,7 +20,7 @@ export default function Item({
     const loadCards = () => {
       setTimeout(() => {
           setLoaded(true)
-      }, 500);
+      }, 1000);
   }
   loadCards();
    },[])
